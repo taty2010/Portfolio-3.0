@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className="App">
       <SideBar />
-      {/* <Main /> */}
+      <Main />
       {/* <About /> */}
       <Route exact path="/" component={Home} />
       <Route exact path="/contact" component={Contact} />
