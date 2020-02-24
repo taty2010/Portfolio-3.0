@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import About from "../About";
-import { ReactComponent as Wave } from "../Components/wave.svg";
+import { ReactComponent as Wave } from "../Wave.svg";
 import { DefaultNav, FixedNav } from "../Components/sidebar/Nav";
 import Form from "./Form";
 
