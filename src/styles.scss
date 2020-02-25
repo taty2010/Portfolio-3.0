@@ -22,7 +22,7 @@
   flex-flow: column;
   top: 0;
   left: 0;
-  padding-top: 15vh;
+  padding-top: 10vh;
   ul {
     text-decoration: none;
     list-style-type: none;
@@ -37,6 +37,12 @@
     font-size: 1.5vw;
     color: #65456b;
     margin: 0;
+    padding-top: 1.5vh;
+  }
+  i{
+    color: #65456b;
+    padding: 1.5vh;
+
   }
 }
 
@@ -63,7 +69,7 @@
   width: 98vw;
   height: 500px;
   position: absolute;
-  top: 0;
+  top: -15vh;
   left: 0;
   box-sizing: content-box;
 }
@@ -115,10 +121,10 @@
     left: -6;
     top: 10vh;
   }
-  @media only screen and (min-width: 900px){
+  @media only screen and (min-width: 900px)and (max-width: 1199px){
     width: 100vw;
     left: -6;
-    top: 20vh;
+    top: 10vh;
   }
   @media only screen and (max-width: 899px) and (min-width: 600px){
     width: 99vw;
@@ -133,7 +139,7 @@
   bottom: 0;
   /* z-index: -1; */
   @media only screen and (min-width: 1200px){
-    top: -70vh;
+    top: -90vh;
   }
   @media only screen and (max-width: 900px){
     width: 99.5vw;
@@ -197,11 +203,31 @@
 }
 
 .nav.ContactNav{
-  top:-25vh;
-  left: 30vw;
+  margin-top:-20vh;
+  margin-bottom: 10vh;
+  margin-left: 15vw;
+  width: 80vw;
   display: flex;
+  position: unset;
   justify-content: center;
+  color: black;
+  li{
+    font-size: 3.5vw;
+  }
+}
 
+.nav.ContactNav a:link{
+  color: black;
+  text-decoration: none;
+}
+
+.nav.ContactNav a:active{
+  color: black;
+text-decoration: none;
+}
+
+.nav.ContactNav a:visited{
+  color: black;
 }
 
 .nav{
@@ -229,6 +255,21 @@
     }
   }
 }
+
+.nav a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:active{
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:visited{
+  color: white;
+}
+
 .nav.fixed{
   ul{
   position: fixed;
@@ -249,8 +290,14 @@
   align-items: center;
   flex-flow: column;
   width: 70vw;
-  margin-top: 90vh;
+  margin-top: 150vh;
   margin-left: 15vw;
+  @media only screen and (max-width: 899px) and (min-width: 600px){
+    margin-top: 100vh;
+  }
+  @media only screen and (min-width: 900px)and (max-width: 1199px){
+    margin-top: 85vh;
+  }
   h2 {
     font-size: 5vw;
     font-family: "Caveat";
@@ -259,6 +306,7 @@
     font-size: 2.5vw;
     width: 60%;
   }
+  
 }
 
 .projects{
@@ -286,6 +334,7 @@
 }
 
 iframe{
-  margin-top: 10vh;
-  margin-left: 30vw;
+  margin-top: 1.5vh;
+  margin-left: 18vw;
+  width: 80vw;
 }

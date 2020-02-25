@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { ReactComponent as Blob } from "./Components/blob.svg";
 import { ReactComponent as Blob2 } from "./Components/blob2.svg";
+import {NavContact} from './Components/sidebar/Nav'
 
 const Projects = () => {
   const Boxes = styled(Blob)`
@@ -24,6 +25,7 @@ const Projects = () => {
 
   return (
     <div className="projects">
+      <NavContact/>
       <h1>My Projects</h1>
       <div className="projectBoxes">
         <Boxes />

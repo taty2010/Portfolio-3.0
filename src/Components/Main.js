@@ -24,7 +24,7 @@ const Main = () => {
           {/* <Wave className="wave2" /> */}
         </div>
       </div>
-      {/* <About /> */}
+      <About />
       {/* <Form /> */}
     </div>
   );

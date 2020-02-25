@@ -14,7 +14,7 @@ export const DefaultNav = props => {
         <Link to="/">
           <li>Home</li>
         </Link>
-        <Link>
+        <Link to='/projects'>
           <li>Projects</li>
         </Link>
         <Link>
@@ -36,10 +36,10 @@ export const NavContact = () => {
         <Link to="/">
           <li>Home</li>
         </Link>
-        <Link>
+        <Link to='/projects'>
           <li>Projects</li>
         </Link>
-        <Link>
+        <Link to='#about'>
           <li>About</li>
         </Link>
         <Link to="/contact">
