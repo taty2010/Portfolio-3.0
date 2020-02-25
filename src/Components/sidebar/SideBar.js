@@ -5,8 +5,9 @@ const SideBar = () => {
   return (
     <div className="sidebar">
       <div className="profileImg" />
-      <h3>First Last</h3>
+      <h3>Tatyana Novell</h3>
       <h3>Front-End Developer</h3>
+      <i class="fas fa-map-marker-alt"> Texas</i>
       <ul>
         <li>
           <i className="fab fa-github" />
