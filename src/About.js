@@ -5,18 +5,17 @@ import Projects from "./Projects";
 
 const About = () => {
   return (
-    <div>
-      <h2>Projects</h2>
+    <div id='about'>
       <div className="about">
         <h2>About Me </h2>
         <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+        My name is Tatyana, I am currently working as a Web Content Editor
+         while also attending Lambda School to become a Software Engineer.
+         Checkout what I've learned so far and take a peak at all the projects 
+         I've completed.
         </p>
       </div>
-      <Projects />
+      {/* <Projects /> */}
     </div>
   );
 };
