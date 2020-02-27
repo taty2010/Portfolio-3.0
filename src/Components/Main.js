@@ -4,6 +4,7 @@ import About from "../About";
 import { ReactComponent as Wave } from "../Wave.svg";
 import { DefaultNav, FixedNav } from "../Components/sidebar/Nav";
 import Form from "./Form";
+import Projects from "../Projects";
 
 const Main = () => {
   const [move, setMove] = useState(0);
@@ -25,6 +26,7 @@ const Main = () => {
         </div>
       </div>
       <About />
+      <Projects />
       {/* <Form /> */}
     </div>
   );
