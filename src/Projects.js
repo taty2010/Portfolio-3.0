@@ -10,24 +10,6 @@ const Projects = () => {
   const proj3 = "https://www.dropbox.com/s/agkcr4wings3y2q/proj4Sq.png?raw=1";
   const proj4 = "";
 
-  // const Boxes = styled(Blob)`
-  //   width: 300px;
-  //   height: 300px;
-  //   margin: 0.5%;
-  //   text-align: center;
-  //   /* clip-path: url("#myClippingPath"); */
-  //   z-index: -2;
-  // `;
-
-  // const Boxes2 = styled(Blob2)`
-  //   width: 300px;
-  //   height: 300px;
-  //   margin: 0.5%;
-  //   text-align: center;
-  //   /* clip-path: url("#myClippingPath"); */
-  //   z-index: -2;
-  // `;
-
   return (
     <div className="projects">
       {/* <NavContact /> */}

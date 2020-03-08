@@ -4,12 +4,6 @@ import { AboutBlob } from "./wave2";
 import Projects from "./Projects";
 
 const About = () => {
-  // const IMG = styled.img`
-  //   width: 30vw;
-  //   position: absolute;
-  //   top: 68vh;
-  //   left: 30vw;
-  // `;
   return (
     <div id="about">
       <div className="about">
