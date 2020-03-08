@@ -24,7 +24,7 @@ export const DefaultNav = props => {
         <Link to="/projects">
           <li>Projects</li>
         </Link>
-        <Link>
+        <Link to="#about">
           <li>About</li>
         </Link>
         <Link to="/contact">
