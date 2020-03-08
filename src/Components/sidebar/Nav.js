@@ -9,12 +9,6 @@ export const DefaultNav = props => {
     top: ${props.move >= 450 ? "60vh" : ""};
   `;
 
-  const H1 = styled.h1`
-    position: inherit;
-    top: 25vh;
-    left: 10vw;
-  `;
-
   return (
     <Nav className={`nav ${props.move >= 600 ? "fixed" : ""}`}>
       <ul>
