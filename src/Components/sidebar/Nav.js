@@ -6,7 +6,7 @@ import About from "../../About";
 
 export const DefaultNav = props => {
   const Nav = styled.div`
-    top: ${props.move >= 450 ? "60vh" : ""};
+    top: ${props.move >= 450 ? "40vh" : ""};
   `;
 
   return (

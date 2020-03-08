@@ -141,8 +141,8 @@ import React from "react";
 export const Blob2 = props => {
   return (
     <svg
-      width="40vw"
-      height="40vh"
+      width="736px"
+      height="697px"
       viewBox="0 0 736 697"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -175,8 +175,8 @@ export const Blob2 = props => {
 export const Blob3 = props => {
   return (
     <svg
-      width="40vw"
-      height="40vh"
+      width="736px"
+      height="697px"
       viewBox="0 0 736 697"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

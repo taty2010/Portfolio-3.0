@@ -13,7 +13,7 @@ const Main = () => {
   });
 
   const Drip = styled(Wave)`
-    top: ${move >= 450 ? "30vh" : ""};
+    top: ${move >= 450 ? "-120vh" : ""};
   `;
 
   return (
