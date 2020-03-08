@@ -2,10 +2,17 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { ReactComponent as Wave } from "../../Wave.svg";
 import { Route, Link } from "react-router-dom";
+import About from "../../About";
 
 export const DefaultNav = props => {
   const Nav = styled.div`
     top: ${props.move >= 450 ? "60vh" : ""};
+  `;
+
+  const H1 = styled.h1`
+    position: inherit;
+    top: 25vh;
+    left: 10vw;
   `;
 
   return (
@@ -14,7 +21,7 @@ export const DefaultNav = props => {
         <Link to="/">
           <li>Home</li>
         </Link>
-        <Link to='/projects'>
+        <Link to="/projects">
           <li>Projects</li>
         </Link>
         <Link>
@@ -36,10 +43,10 @@ export const NavContact = () => {
         <Link to="/">
           <li>Home</li>
         </Link>
-        <Link to='/projects'>
+        <Link to="/projects">
           <li>Projects</li>
         </Link>
-        <Link to='#about'>
+        <Link to="#about">
           <li>About</li>
         </Link>
         <Link to="/contact">
