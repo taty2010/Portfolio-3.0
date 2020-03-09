@@ -1,5 +1,35 @@
 @import url("https://fonts.googleapis.com/css?family=Caveat&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap');
+.aws-btn {
+  @media only screen and (max-width: 599px){
+    --button-default-height: 30px;
+    --button-default-border-radius: 30px;
+    --button-horizontal-padding: 1px;
+  }
+  --button-default-height: 50px;
+  --button-default-font-size: 14px;
+  --button-default-border-radius: 30px;
+  --button-horizontal-padding: 8px;
+  --button-raise-level: 5px;
+  --button-hover-pressure: 3;
+  --transform-speed: 0.185s;
+  --button-primary-color-dark: #4a3f97;
+  --button-primary-color: #a56ec5;
+  --button-primary-color-light: #2e84b2;
+  --button-primary-color-hover: #fda7d2;
+  --button-primary-border: none;
+  --button-secondary-color: #fafafa;
+  --button-secondary-color-dark: #67cbc3;
+  --button-secondary-color-light: #349890;
+  --button-secondary-color-hover: #ecf9f8;
+  --button-secondary-border: 2px solid #b3e5e1;
+  --button-anchor-color: #95d44a;
+  --button-anchor-color-dark: #52a934;
+  --button-anchor-color-light: #3f8228;
+  --button-anchor-color-hover: #89cf35;
+  --button-anchor-border: 2px solid #5bbd3a;
+  }
+
 .App{
   display: flex;
     flex-flow: row wrap;
@@ -20,19 +50,21 @@
     }
 }
 
-.sidebar_bttn{
-  font-size: 2vw;
+.sidebar_bttn[type="primary"]{
+  font-size: 0.5vw;
   background-color: transparent;
   border: none;
   padding: 5vh 0;
   i{
     color: rgb(192, 252, 168);
     cursor: pointer;
+    font-size: 0.5vw;
   }
   @media only screen and (max-width: 599px){
     font-size: 8vw;
   }
 }
+
 
 .sidebar{
   width: 15vw;
@@ -49,6 +81,8 @@
   @media only screen and (max-width: 599px){
     width: 100vw;
     background-image: linear-gradient(180deg, rgba(28, 4, 77, 0.8) 0%, rgba(224, 130, 160, 0.8) 100%);
+    padding-top: 15vh;
+
   }
   ul {
     text-decoration: none;
@@ -90,23 +124,26 @@
   @media only screen and (max-width: 599px){
     background-image: none;
     border: none;
+    padding-top: 0;
     ul{
       display:none;
     }
     .profileImg{
       display: none;
     }
+     .location {
+      display: none;
+    }
     .sidebar_bttn{
       font-size: 5vw;
-      padding-left: 2.5vw;
+      top: 2vh;
+      left: 2vw;
+      margin-left: 8vw;
+      margin-top: 1vh;
     }
   }
   h3 {
      display: none;
-  }
-  span i{
-    display:none;
-    
   }
   .profileImg{
       width: 4vw;
@@ -115,7 +152,13 @@
   }
   .sidebar_bttn{
     i{
-      color: gray;
+      color: lightgray;
+      &:hover{
+        color: white;
+      }
+      @media only screen and (max-width: 599px){
+        font-size: 2.5vw;
+      }
     }
   }
 }
@@ -210,6 +253,12 @@
       left: 34vw;
       top: 42vh;
       width: 45vw;
+      @media only screen and (max-width: 599px){
+        line-height: 2.5vh;
+        font-size: 3vw;
+        top: 30vh;
+        width: 55vw;
+      }
       @media only screen and (max-width: 899px) and (min-width: 600px){
         width:55vw;
       }
@@ -262,6 +311,9 @@
   top: -180vh;
   bottom: 0;
   /* z-index: -1; */
+  @media only screen and (max-width: 599px){
+    top: -42vh;
+  }
   @media only screen and (min-width: 1200px){
     top: -145vh;
   }
@@ -359,6 +411,9 @@ text-decoration: none;
   top: -6vh;
   left: 30vw;
   transition: top .4s linear;
+  @media only screen and (max-width:599px){
+    left: 18vw;
+  }
   ul {
     text-decoration: none;
     list-style-type: none;
@@ -406,6 +461,13 @@ text-decoration: none;
   left: 35vw;
   margin: 0;
   z-index: 20;
+  @media only screen and (max-width:599px){
+    left: 16vw;
+    li{
+      font-size: 4vw;
+      text-shadow: 2px 3px 0px #baa5bd99;
+    }
+  }
   @media only screen and (min-width: 900px)and (max-width: 1199px){
     top: 0;
     left:25vw;
@@ -463,6 +525,9 @@ text-decoration: none;
     flex-flow: column;
     margin-top: 75vh;
     height: 2500px;
+    @media only screen and (max-width: 599px){
+      margin-top: 35vh;
+    }
   h1 {
     font-size: 4.5vw;
     font-family: "Caveat";

@@ -4,7 +4,7 @@ import About from "../About";
 import { ReactComponent as Wave } from "../Wave.svg";
 import { DefaultNav, FixedNav } from "../Components/sidebar/Nav";
 import Form from "./Form";
-import Projects from '../Projects'
+import Projects from "../Projects";
 
 const Main = () => {
   const [move, setMove] = useState(0);
@@ -17,7 +17,7 @@ const Main = () => {
   `;
 
   return (
-  <div className="mainWrapper">
+    <div className="mainWrapper">
       <Drip className={`wave ${move > 600 ? "fixed" : ""}`} />
       <div className="header">
         <div className="about-header">
@@ -29,12 +29,9 @@ const Main = () => {
         </div>
         <div>
           <DefaultNav move={move} />
-          {/* <Wave className="wave2" /> */}
         </div>
       </div>
-      {/* <About /> */}
       <Projects />
-      {/* <Form /> */}
     </div>
   );
 };

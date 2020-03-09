@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { ReactComponent as Wave } from "../../Wave.svg";
-import { Route, Link } from "react-router-dom";
-import About from "../../About";
+import { Link } from "react-router-dom";
 
 export const DefaultNav = props => {
   const Nav = styled.div`
@@ -18,13 +16,12 @@ export const DefaultNav = props => {
         <Link to="/projects">
           <li>Projects</li>
         </Link>
-        <a href ='#about'>
+        <a href="#about">
           <li>About</li>
         </a>
         <Link to="/contact">
           <li>Contact</li>
         </Link>
-        {/* <Wave className="wave2" /> */}
       </ul>
     </Nav>
   );
@@ -46,7 +43,6 @@ export const NavContact = () => {
         <Link to="/contact">
           <li>Contact</li>
         </Link>
-        {/* <Wave className="wave2" /> */}
       </ul>
     </nav>
   );
