@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Blob1 } from "./Components/blob";
 import { Blob2, Blob3 } from "./Components/blob2";
-import { NavContact } from "./Components/sidebar/Nav";
+import {NavContact} from './Components/sidebar/Nav'
+import {proj1} from './img/proj1ImgSq.png'
 
 const Projects = () => {
   const proj1 = "https://www.dropbox.com/s/6z2u3f1ddokcq6e/proj5Sq.png?raw=1";

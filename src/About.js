@@ -1,7 +1,4 @@
 import React from "react";
-import styled from "styled-components";
-import { AboutBlob } from "./wave2";
-import Projects from "./Projects";
 
 const About = () => {
   return (
