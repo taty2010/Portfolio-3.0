@@ -6,6 +6,7 @@
     --button-default-border-radius: 30px;
     --button-horizontal-padding: 1px;
   }
+  
   --button-default-height: 50px;
   --button-default-font-size: 14px;
   --button-default-border-radius: 30px;
@@ -28,6 +29,11 @@
   --button-anchor-color-light: #3f8228;
   --button-anchor-color-hover: #89cf35;
   --button-anchor-border: 2px solid #5bbd3a;
+  @media only screen and (max-width: 899px) and (min-width: 600px){
+    --button-default-height: 40px;
+    --button-default-border-radius: 30px;
+    --button-horizontal-padding: 1px;
+  }
   }
 
 .App{
@@ -84,6 +90,10 @@
     padding-top: 15vh;
 
   }
+  @media only screen and (max-width: 899px) and (min-width: 600px){
+    width: 18vw;
+    padding-top: 5vh;
+  }
   ul {
     text-decoration: none;
     list-style-type: none;
@@ -131,9 +141,6 @@
     .profileImg{
       display: none;
     }
-     .location {
-      display: none;
-    }
     .sidebar_bttn{
       font-size: 5vw;
       top: 2vh;
@@ -141,6 +148,24 @@
       margin-left: 8vw;
       margin-top: 1vh;
     }
+  }
+
+  @media only screen and (max-width: 899px) and (min-width: 600px){
+    padding-top: 5vh;
+    padding-left: 3.5vw;
+    background-image: none;
+    border: none;
+    ul{
+      display:none;
+    }
+    .profileImg{
+      display: none;
+    }
+  }
+  
+  li{
+    padding-top: 4.5vh;
+     font-size: 2vw;
   }
   h3 {
      display: none;
@@ -160,6 +185,9 @@
         font-size: 2.5vw;
       }
     }
+  }
+  .location {
+    display: none;
   }
 }
 
@@ -261,6 +289,7 @@
       }
       @media only screen and (max-width: 899px) and (min-width: 600px){
         width:55vw;
+        top: 37vh;
       }
       @media only screen and (min-width: 1200px){
         line-height: 4vh;
@@ -294,7 +323,7 @@
   }
   @media only screen and (max-width: 899px) and (min-width: 600px){
     width: 99vw;
-    top: 9vh;
+    top: -25vh;
     left: 0;
   }
   @media only screen and (max-width: 599px){
@@ -319,7 +348,7 @@
   }
   @media only screen and (max-width: 899px) and (min-width: 600px){
     width: 99.5vw;
-    top: -39vh;
+    top: -70vh;
   }
   @media only screen and (min-width: 900px)and (max-width: 1199px){
     top: -115vh;
@@ -414,6 +443,9 @@ text-decoration: none;
   @media only screen and (max-width:599px){
     left: 18vw;
   }
+  @media only screen and (max-width: 899px) and (min-width: 600px){
+    left: 18vw;
+  }
   ul {
     text-decoration: none;
     list-style-type: none;
@@ -465,6 +497,12 @@ text-decoration: none;
     left: 16vw;
     li{
       font-size: 4vw;
+      text-shadow: 2px 3px 0px #baa5bd99;
+    }
+  }
+  @media only screen and (max-width: 899px) and (min-width: 600px){
+    left: 18vw;
+    li{
       text-shadow: 2px 3px 0px #baa5bd99;
     }
   }
