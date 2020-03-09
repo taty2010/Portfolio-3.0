@@ -20,22 +20,29 @@
     }
 }
 
+.sidebar_bttn{
+  font-size: 2vw;
+  background-color: transparent;
+  border: none;
+  padding: 5vh 0;
+  i{
+    color: rgb(192, 252, 168);
+    cursor: pointer;
+  }
+}
+
 .sidebar{
   width: 15vw;
   height: 100vh;
-  background-image: linear-gradient(
-    180deg,
-    rgba(255, 197, 197, 0.18) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background-image: linear-gradient(180deg, rgba(28, 4, 77, 0.58) 0%, rgba(224, 130, 160, 0.61) 100%);
   position: fixed;
   z-index: 9;
+  border-right: 1px solid #9493b3;
   display: flex;
   align-items: center;
   flex-flow: column;
   top: 0;
   left: 0;
-  padding-top: 10vh;
   ul {
     text-decoration: none;
     list-style-type: none;
@@ -44,6 +51,7 @@
     li {
       font-size: 2vw;
       padding: 2.5vh 0;
+      color: white;
       @media only screen and (max-width: 899px) and (min-width: 600px){
         font-size: 3vw;
         padding: 0.2vh 0;
@@ -56,10 +64,49 @@
     margin: 0;
     padding-top: 1.5vh;
   }
-  i{
+  span i{
     color: white;
     padding: 1.5vh;
 
+  }
+}
+
+.sidebar.closed{
+  width: 5vw;
+  height: 100vh;
+  ul {
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+    li {
+      font-size: 2vw;
+      padding: 2.5vh 0;
+      @media only screen and (max-width: 899px) and (min-width: 600px){
+        font-size: 3vw;
+        padding: 0.2vh 0;
+        i{
+          color: white
+        }
+      }
+    }
+  }
+  h3 {
+     display: none;
+  }
+  span i{
+    display:none;
+    
+  }
+  .profileImg{
+      width: 4vw;
+      height: 6vh;
+      margin-top: 15vh;
+  }
+  .sidebar_bttn{
+    i{
+      color: gray;
+    }
   }
 }
 
@@ -70,7 +117,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(https://www.dropbox.com/s/lqqwwks9wapmc8p/MOSHED-2020-3-7-21-22-37.gif?raw=1);
+  background-image: url('https://www.dropbox.com/s/95r5fjf08exe52g/profile-gif.gif?raw=1');
   border-radius: 100px;
   margin: 5% auto;
   margin-bottom: 20%;
@@ -208,7 +255,7 @@
     top: -39vh;
   }
   @media only screen and (min-width: 900px)and (max-width: 1199px){
-    top: -105vh;
+    top: -115vh;
   }
 }
 
