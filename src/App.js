@@ -1,13 +1,10 @@
 import React from "react";
 import "./styles.scss";
 import SideBar from "./Components/sidebar/SideBar";
-import Main from "./Components/Main";
 import { Route } from "react-router-dom";
 import Home from "./Components/Main";
 import Contact from "./Components/Form";
-import Projects from './Projects';
-
-import styled from "styled-components";
+import Projects from "./Projects";
 
 export default function App() {
   return (
