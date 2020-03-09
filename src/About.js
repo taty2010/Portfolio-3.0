@@ -1,24 +1,7 @@
 import React from "react";
-import styled from "styled-components";
-<<<<<<< HEAD
-import {ReactComponent as Blob} from './About.svg'
-
-=======
-import { AboutBlob } from "./wave2";
->>>>>>> origin
-import Projects from "./Projects";
 
 const About = () => {
   return (
-<<<<<<< HEAD
-    <div>
-      <div className="about">
-        <Blob className='blob'/>
-        <p id='about'>
-          Currently working as a Web Content Editor but I dream
-          of making it big as a Front-End Developer with an eye
-          for design.
-=======
     <div id="about">
       <div className="about">
         {/* <IMG
@@ -31,7 +14,6 @@ const About = () => {
           while also attending Lambda School to become a Software Engineer.
           Checkout what I've learned so far and take a peak at all the projects
           I've completed.
->>>>>>> origin
         </p>
       </div>
       {/* <Projects /> */}
