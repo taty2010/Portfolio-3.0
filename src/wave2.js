@@ -8,8 +8,7 @@ export const AboutBlob = () => {
       height="653"
       viewBox="0 0 872 653"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"

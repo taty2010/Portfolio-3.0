@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Caveat&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  // background-image: url('https://www.dropbox.com/s/srjyi8jjhqd7fqp/MOSHED-2020-3-7-1-47-51.jpg?raw=1');
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+
+}
+
 .aws-btn {
   @media only screen and (max-width: 599px){
     --button-default-height: 30px;
@@ -44,18 +57,6 @@
     height: auto;
 }
 
-.boxes2{
-  width: 20vw;
-    height: 300px;
-    margin: 0.5%;
-    text-align: center;
-    /* clip-path: url("#myClippingPath"); */
-    z-index: -2;
-    @media only screen and (min-width: 1200px){
-      height: 80vh;
-    }
-}
-
 .sidebar_bttn[type="primary"]{
   font-size: 0.5vw;
   background-color: transparent;
@@ -94,6 +95,11 @@
     width: 18vw;
     padding-top: 5vh;
   }
+  
+  @media only screen and (max-width: 1199px) and (min-width: 900px){
+    width: 25vw;
+  }
+  
   ul {
     text-decoration: none;
     list-style-type: none;
@@ -153,6 +159,20 @@
   @media only screen and (max-width: 899px) and (min-width: 600px){
     padding-top: 5vh;
     padding-left: 3.5vw;
+    width: 20vw;
+    background-image: none;
+    border: none;
+    ul{
+      display:none;
+    }
+    .profileImg{
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 1199px) and (min-width: 900px){
+    padding-top: 2vh;
+    padding-left: 3.5vw;
+
     background-image: none;
     border: none;
     ul{
@@ -224,7 +244,7 @@
   left: -1vw;
   // left: 20vw;
   box-sizing: content-box;
-  background-image:linear-gradient(182.59deg, #ffffff 2.39%, #d34b769e 40.15%, #d34b76b8 91.9%);;
+  // background-image:linear-gradient(182.59deg, #ffffff 2.39%, #d34b769e 40.15%, #d34b76b8 91.9%);;
 }
 
 .header{
@@ -250,7 +270,7 @@
       width: 99vw;
       left: -6;
     }
-    @media only screen and (min-width: 768px){
+    @media only screen and (max-width: 899px) and (min-width: 600px){
       width: 100vw;
       // left: -1vw;
     }
@@ -272,6 +292,12 @@
       @media only screen and (min-width: 1200px){
         font-size: 5vw;
       }
+      @media only screen and (min-width: 900px)and (max-width: 1199px){
+        top: 15vh;
+      }
+      @media only screen and (max-width: 899px) and (min-width: 600px){
+        top:32vh;
+      }
   }
   h3 {
     font-family: 'Bungee Hairline', cursive;
@@ -282,14 +308,24 @@
       top: 42vh;
       width: 45vw;
       @media only screen and (max-width: 599px){
-        line-height: 2.5vh;
-        font-size: 3vw;
-        top: 30vh;
-        width: 55vw;
+        line-height: 3.8vh;
+        font-size: 3.5vw;
+        top: 35vh;
+        width: 65vw;
+        left: 30vw;
+        font-weight: bold;
       }
       @media only screen and (max-width: 899px) and (min-width: 600px){
-        width:55vw;
-        top: 37vh;
+        width: 55vw;
+        top: 50vh;
+        font-size: 3.5vw;
+        line-height: 4vh;
+      }
+      @media only screen and (min-width: 900px)and (max-width: 1199px){
+        top:38vh;
+        font-size: 3vw;
+        width:60vw;
+        line-height: 5vh;
       }
       @media only screen and (min-width: 1200px){
         line-height: 4vh;
@@ -313,17 +349,17 @@
   @media only screen and (min-width: 1200px){
     width: 100vw;
     // left: -6;
-    top: -95vh;
+    top: -500px;
   }
   @media only screen and (min-width: 900px)and (max-width: 1199px){
     width: 100vw;
-    //  left: -1vw;
-     top: -45vh;
+    left: -5px;
+     top: -50vh;
     // top: 30vh;
   }
   @media only screen and (max-width: 899px) and (min-width: 600px){
     width: 99vw;
-    top: -25vh;
+    top: 0;
     left: 0;
   }
   @media only screen and (max-width: 599px){
@@ -333,27 +369,27 @@
   }
 }
 
-.wave.fixed {
-  width: 100vw;
-  // left:20vw;
-  position: fixed;
-  top: -180vh;
-  bottom: 0;
-  /* z-index: -1; */
-  @media only screen and (max-width: 599px){
-    top: -42vh;
-  }
-  @media only screen and (min-width: 1200px){
-    top: -145vh;
-  }
-  @media only screen and (max-width: 899px) and (min-width: 600px){
-    width: 99.5vw;
-    top: -70vh;
-  }
-  @media only screen and (min-width: 900px)and (max-width: 1199px){
-    top: -115vh;
-  }
-}
+// .wave.fixed {
+//   width: 100vw;
+//   // left:20vw;
+//   position: fixed;
+//   top: -180vh;
+//   bottom: 0;
+//   /* z-index: -1; */
+//   @media only screen and (max-width: 599px){
+//     top: -42vh;
+//   }
+//   @media only screen and (min-width: 1200px) and (max-width: 2130px){
+//     top: -990px;
+//   }
+//   @media only screen and (max-width: 899px) and (min-width: 600px){
+//     width: 99.5vw;
+//     top: -70vh;
+//   }
+//   @media only screen and (min-width: 900px)and (max-width: 1199px){
+//     top: -105vh;
+//   }
+// }
 
 // .wave.fixed:hover {
 //   animation-name: svg;
@@ -446,6 +482,15 @@ text-decoration: none;
   @media only screen and (max-width: 899px) and (min-width: 600px){
     left: 18vw;
   }
+
+  @media only screen and (min-width: 900px)and (max-width: 1199px){
+     top: 5vh;
+     left: 25vw;
+  }
+  @media only screen and (min-width: 1200px){
+    left:25vw;
+  }
+
   ul {
     text-decoration: none;
     list-style-type: none;
@@ -454,6 +499,9 @@ text-decoration: none;
     margin-top: 30vh;
     display: flex;
     flex-flow: row;
+    @media only screen and (min-width: 900px)and (max-width: 1199px){
+      margin-top: 18vh;
+    }
   }
   li {
     font-size: 2vw;
@@ -487,12 +535,28 @@ text-decoration: none;
 }
 
 .nav.fixed{
-  ul{
+  background-color: #6e6695;;
   position: fixed;
   top: 1vh;
-  left: 35vw;
+  left: 30vw;
   margin: 0;
-  z-index: 20;
+  z-index: 10;
+  width: 50vw;
+  text-align: center;
+  @media only screen and (max-width: 899px) and (min-width: 600px){
+    top: 0;
+    left: 25vw;
+    width: 62vw;
+  }
+  ul{
+  // position: fixed;
+  // top: 1vh;
+  // left: 35vw;
+  margin: 0;
+  // z-index: 20;
+  li{
+    margin: 0 2vw;
+  }
   @media only screen and (max-width:599px){
     left: 16vw;
     li{
@@ -504,6 +568,9 @@ text-decoration: none;
     left: 18vw;
     li{
       text-shadow: 2px 3px 0px #baa5bd99;
+
+      font-size: 2.8vw;
+
     }
   }
   @media only screen and (min-width: 900px)and (max-width: 1199px){
@@ -561,14 +628,95 @@ text-decoration: none;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    margin-top: 75vh;
-    height: 2500px;
+    // margin-top: 10vh;
+    // height: 2500px;
     @media only screen and (max-width: 599px){
       margin-top: 35vh;
+    }
+    @media only screen and (min-width: 900px)and (max-width: 1199px){
+      margin-top: -10vh;
+    }
+    @media only screen and (min-width: 1200px){
+      margin-top: 70vh;
     }
   h1 {
     font-size: 4.5vw;
     font-family: "Caveat";
+  }
+}
+
+.right_arrow{
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.left_arrow{
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.carousel_wrapper{
+  // margin-top: 1900px;
+  height: 80vh;
+  margin-left: 10vw;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    @media only screen and (min-width: 1200px) and (max-width: 2200px){
+      margin-top: 135vh;
+    }
+}
+
+.overlay_carousal {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  height: 20%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4; margin-right: -20vw;}
+  to {opacity: 1; margin-right: 0;}
+}
+
+@keyframes fade {
+  from {opacity: .4;margin-right: -20vw;}
+  to {opacity: 1; margin-right: 0;}
+}
+
+
+.wrapper_projects{
+  height: 100vh;
+  margin-top: 50vh;
+  margin-left: 10vw;
+  @media only screen and (max-width: 899px) and (min-width: 600px){
+    margin-top: 120vh;
+   }
+   @media only screen and (min-width: 900px)and (max-width: 1199px){
+    margin-top: 120vh;
+  }
+  @media only screen and (min-width: 1200px){
+    margin-top: -10%;
+  }
+  h1{
+    margin-left: 30vw;
   }
 }
 
@@ -579,9 +727,23 @@ text-decoration: none;
     width: 80vw;
     height: auto;
     margin-top: 10vh;
-    margin-left: 10vw;
     @media only screen and (max-width: 800px){
       margin-top: 10vh;
+    }
+}
+
+.boxes2{
+  width: 25vw;
+    // height: 300px;
+    margin: 2vw;
+    text-align: center;
+    z-index: -2;
+    @media only screen and (min-width: 1200px){
+      height: 28vh;
+      padding: 2.5vh 0;
+    }
+    img{
+      width: 25vw;
     }
 }
 
