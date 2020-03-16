@@ -4,7 +4,7 @@ import SideBar from "./Components/sidebar/SideBar";
 import { Route } from "react-router-dom";
 import Home from "./Components/Main";
 import Contact from "./Components/Form";
-import Projects from "./Projects";
+import Projects from "./Projects/Projects";
 
 export default function App() {
   return (

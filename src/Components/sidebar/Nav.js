@@ -13,9 +13,9 @@ export const DefaultNav = props => {
         <Link to="/">
           <li>Home</li>
         </Link>
-        <Link to="/projects">
+        <a href="#projects">
           <li>Projects</li>
-        </Link>
+        </a>
         <a href="#about">
           <li>About</li>
         </a>

@@ -9,9 +9,14 @@ const SideBar = () => {
       <AwesomeButton
         type="primary"
         className="sidebar_bttn"
-        onPress={e => setToggle(!toggle)}>
+        onPress={e => setToggle(!toggle)}
+      >
         <p>
-          <i className="fas fa-power-off" />
+          {!toggle ? (
+            <i class="fas fa-angle-double-right" />
+          ) : (
+            <i class="fas fa-angle-double-left" />
+          )}
         </p>
       </AwesomeButton>
       <div className="profileImg" />

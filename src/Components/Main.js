@@ -4,7 +4,8 @@ import About from "../About";
 import { ReactComponent as Wave } from "../Wave.svg";
 import { DefaultNav, FixedNav } from "../Components/sidebar/Nav";
 import Form from "./Form";
-import Projects from "../Projects";
+import Projects from "../Projects/Projects";
+import Carousel from "../Projects/Carousel";
 
 const Main = () => {
   const [move, setMove] = useState(0);
@@ -12,25 +13,37 @@ const Main = () => {
     setMove(window.scrollY);
   });
 
-  const Drip = styled(Wave)`
-    top: ${move >= 450 ? "-120vh" : ""};
-  `;
+  // const Drip = styled(Wave)`
+  //   /* top: ${move >= 500 ? "-120vh" : ""}; */
+  //   /* @media only screen and (max-width: 899px) and (min-width: 600px) {
+  //     top: ${move >= 100 ? "-120vh" : ""};
+  //   }
+  //   @media only screen and (min-width: 900px) and (max-width: 1199px) {
+  //     width: 70%;
+  //   }
+  //   @media only screen and (min-width: 1200px) {
+  //   } */
+  // `;
 
   return (
     <div className="mainWrapper">
-      <Drip className={`wave ${move > 600 ? "fixed" : ""}`} />
+      <Wave
+        styles={`top:${move >= 500 ? "-120vh" : ""}`}
+        className={`wave ${move > 600 ? "fixed" : ""}`}
+      />
       <div className="header">
-        <div className="about-header">
-          <h1>Hello,</h1>
-          <h3>
-            I am currently working as a Web Content Editor, knowledgeable in
-            Front-End Development and currently gaining experience in Back-End.
-          </h3>
-        </div>
         <div>
           <DefaultNav move={move} />
         </div>
+        <div className="about-header">
+          <h1>Hello,</h1>
+          <h3>
+            I am currently working as a Web Content Editor. Knowledgeable in
+            Front-End Development and gaining experience in Back-End.
+          </h3>
+        </div>
       </div>
+      {/* <Carousel /> */}
       <Projects />
     </div>
   );
