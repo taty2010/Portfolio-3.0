@@ -7,6 +7,7 @@ const SideBar = () => {
   return (
     <div className={`sidebar ${!toggle ? "closed" : ""}`}>
       <AwesomeButton
+      size='icon'
         type="primary"
         className="sidebar_bttn"
         onPress={e => setToggle(!toggle)}
