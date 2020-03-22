@@ -6,12 +6,15 @@ import { DefaultNav, FixedNav } from "../Components/sidebar/Nav";
 import Form from "./Form";
 import Projects from "../Projects/Projects";
 import Carousel from "../Projects/Carousel";
+import Skills from "./Skills";
 
 const Main = () => {
   const [move, setMove] = useState(0);
   document.addEventListener("scroll", () => {
     setMove(window.scrollY);
   });
+
+  const toTop = move > 600 ? "1" : "0";
 
   // const Drip = styled(Wave)`
   //   /* top: ${move >= 500 ? "-120vh" : ""}; */
@@ -24,6 +27,11 @@ const Main = () => {
   //   @media only screen and (min-width: 1200px) {
   //   } */
   // `;
+
+  const backToTop = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  };
 
   return (
     <div className="mainWrapper">
@@ -44,7 +52,11 @@ const Main = () => {
         </div>
       </div>
       {/* <Carousel /> */}
+      <Skills />
       <Projects />
+      <div style={{ opacity: toTop }} className="toTop">
+        <i onClick={backToTop} class="fas fa-chevron-circle-up" />
+      </div>
     </div>
   );
 };
