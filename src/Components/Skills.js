@@ -13,7 +13,7 @@ const Skills = () => {
   document.addEventListener("scroll", () => {
     setMove(window.scrollY);
   });
-  console.log(move);
+  // console.log(move);
   const mobile = move > 100 ? "1" : "0";
   const mobileMid = move > 200 ? "1" : "0";
   const mobileBttm = move > 300 ? "1" : "0";
