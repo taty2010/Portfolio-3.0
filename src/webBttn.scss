@@ -34,6 +34,7 @@
     --button-default-height: 10px;
     --button-default-border-radius: 25px;
     --button-horizontal-padding: 1px;
+    width: 8vw;
   }
   
   --button-default-height: 30px;
@@ -53,10 +54,11 @@
   --button-secondary-color-hover: transparent;
   --button-secondary-border: 1.5px solid #fb43c4;
   margin: 0 1vw;
-  width: 8vw;
+  width: 3vw;
   @media only screen and (max-width: 899px) and (min-width: 600px){
     --button-default-height: 40px;
     --button-default-border-radius: 30px;
     --button-horizontal-padding: 1px;
+    width: 5vw;
   }
   }
