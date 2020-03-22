@@ -1,9 +1,10 @@
 import React from "react";
-import styled from "styled-components";
-import { Blob1 } from "../Components/blob";
-import { Blob2, Blob3 } from "../Components/blob2";
-import { NavContact } from "../Components/sidebar/Nav";
-import { ReactComponent as Wave2 } from "../wave2.svg";
+import {
+  AwesomeButton,
+  AwesomeButtonProgress,
+  AwesomeButtonSocial
+} from "react-awesome-button";
+import styles from "../webBttn.scss";
 
 const Projects = () => {
   const proj1 = "https://www.dropbox.com/s/6z2u3f1ddokcq6e/proj5Sq.png?raw=1";
@@ -45,8 +46,19 @@ const Projects = () => {
             <div className="proj-desc">
               <h3>Project Name Here</h3>
               <p>Brief description of project here</p>
-              <button>Github</button>
-              <button>Website</button>
+              <AwesomeButtonSocial
+                className="socialBttn"
+                size="icon"
+                type="github"
+              />
+              <AwesomeButton
+                className="socialBttn"
+                size="icon"
+                cssModule={styles}
+                type="secondary"
+              >
+                <i class="fas fa-globe" />
+              </AwesomeButton>
             </div>
           </div>
           <div className="boxes2">
@@ -54,8 +66,19 @@ const Projects = () => {
             <div className="proj-desc">
               <h3>Project Name Here</h3>
               <p>Brief description of project here</p>
-              <button>Github</button>
-              <button>Website</button>
+              <AwesomeButtonSocial
+                className="socialBttn"
+                size="icon"
+                type="github"
+              />
+              <AwesomeButton
+                className="socialBttn"
+                size="icon"
+                cssModule={styles}
+                type="secondary"
+              >
+                <i class="fas fa-globe" />
+              </AwesomeButton>
             </div>
           </div>
           <div className="boxes2">
@@ -63,8 +86,19 @@ const Projects = () => {
             <div className="proj-desc">
               <h3>Project Name Here</h3>
               <p>Brief description of project here</p>
-              <button>Github</button>
-              <button>Website</button>
+              <AwesomeButtonSocial
+                className="socialBttn"
+                size="icon"
+                type="github"
+              />
+              <AwesomeButton
+                className="socialBttn"
+                size="icon"
+                cssModule={styles}
+                type="secondary"
+              >
+                <i class="fas fa-globe" />
+              </AwesomeButton>
             </div>
           </div>
           <div className="boxes2">
@@ -72,8 +106,19 @@ const Projects = () => {
             <div className="proj-desc">
               <h3>Project Name Here</h3>
               <p>Brief description of project here</p>
-              <button>Github</button>
-              <button>Website</button>
+              <AwesomeButtonSocial
+                className="socialBttn"
+                size="icon"
+                type="github"
+              />
+              <AwesomeButton
+                className="socialBttn"
+                size="icon"
+                cssModule={styles}
+                type="secondary"
+              >
+                <i class="fas fa-globe" />
+              </AwesomeButton>
             </div>
           </div>
           <div className="boxes2">
@@ -81,8 +126,19 @@ const Projects = () => {
             <div className="proj-desc">
               <h3>Project Name Here</h3>
               <p>Brief description of project here</p>
-              <button>Github</button>
-              <button>Website</button>
+              <AwesomeButtonSocial
+                className="socialBttn"
+                size="icon"
+                type="github"
+              />
+              <AwesomeButton
+                className="socialBttn"
+                size="icon"
+                cssModule={styles}
+                type="secondary"
+              >
+                <i class="fas fa-globe" />
+              </AwesomeButton>
             </div>
           </div>
           <div className="boxes2">
@@ -90,8 +146,19 @@ const Projects = () => {
             <div className="proj-desc">
               <h3>Project Name Here</h3>
               <p>Brief description of project here</p>
-              <button>Github</button>
-              <button>Website</button>
+              <AwesomeButtonSocial
+                className="socialBttn"
+                size="icon"
+                type="github"
+              />
+              <AwesomeButton
+                className="socialBttn"
+                size="icon"
+                cssModule={styles}
+                type="secondary"
+              >
+                <i class="fas fa-globe" />
+              </AwesomeButton>
             </div>
           </div>
         </div>
