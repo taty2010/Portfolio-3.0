@@ -131,7 +131,7 @@ h3{
 
   @media only screen and (max-width: 899px) and (min-width: 600px){
     padding-top: 5vh;
-    padding-left: 3.5vw;
+    padding-left: 0vw;
     width: 20vw;
     background-image: none;
     border: none;
@@ -382,12 +382,8 @@ text-decoration: none;
   position: relative;
   top: -6vh;
   left: 30vw;
-  // transition: top .4s linear;
-  // @media only screen and (max-width:599px){
-  //   left: 30vw;
-  // }
   @media only screen and (max-width: 899px) and (min-width: 600px){
-    left: 18vw;
+    left: 30vw;
   }
 
   @media only screen and (min-width: 900px)and (max-width: 1199px){
@@ -422,8 +418,8 @@ text-decoration: none;
       color: #f08aa0;
     }
     @media only screen and (max-width: 800px){
-      font-size: 3.5vw;
-    margin: 0 1.5vw;
+      font-size: 2.5vw;
+      margin: 0 1.5vw;
     }
   }
 }
