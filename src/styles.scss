@@ -13,6 +13,9 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 100%;
+  @media only screen and (max-width: 599px){
+    background-position-y: -30vh;
+  }
 
 }
 
@@ -222,6 +225,9 @@ h3{
     width: 60vw;
     font-family: $main-font;
     line-height: 6vh;
+    @media only screen and (max-width: 599px){
+      margin-top: 70vh;
+    }
     @media only screen and (min-width:1200px){
       margin-top: 150vh;
       padding-top: 30vh;
@@ -377,9 +383,9 @@ text-decoration: none;
   top: -6vh;
   left: 30vw;
   // transition: top .4s linear;
-  @media only screen and (max-width:599px){
-    left: 18vw;
-  }
+  // @media only screen and (max-width:599px){
+  //   left: 30vw;
+  // }
   @media only screen and (max-width: 899px) and (min-width: 600px){
     left: 18vw;
   }
@@ -441,10 +447,10 @@ text-decoration: none;
   border-radius: 25px;
   position: fixed;
   top: 1vh;
-  left: 30vw;
+  left:20vw;
   margin: 0;
   z-index: 10;
-  width: 50vw;
+  width: auto;
   text-align: center;
   @media only screen and (max-width: 899px) and (min-width: 600px){
     top: 0;
@@ -459,7 +465,7 @@ text-decoration: none;
   @media only screen and (max-width:599px){
     left: 16vw;
     li{
-      font-size: 4vw;
+      font-size: 3vw;
       text-shadow: 2px 3px 0px #baa5bd99;
     }
   }
@@ -768,7 +774,7 @@ text-decoration: none;
     padding: 2vw;
     border-radius: 25px;
     border: 1px solid #efaaf591;
-    box-shadow: inset 0px 1px 5px 2px #7a5386;
+    box-shadow: inset -4px 1px 2px 1px #583a61b3;
     color: white;
     &:hover{
       background-color: white;
@@ -776,7 +782,8 @@ text-decoration: none;
     }
     @media only screen and (max-width: 599px){
       flex-flow: column wrap;
-      width: 45vw;
+      width: 90vw;
+      padding: 5vh 0;
     }
     @media only screen and (max-width: 899px) and (min-width: 600px){
       flex-flow: column wrap;
@@ -790,6 +797,9 @@ text-decoration: none;
     img{
       width: 45%;
       box-shadow: 7px 4px 9px #80808096;
+      @media only screen and (max-width: 599px){
+        width:75%;
+      }
       @media only screen and (max-width: 899px) and (min-width: 600px){
         width: 60%;
       }
@@ -805,6 +815,9 @@ text-decoration: none;
 .proj-desc{
   h3{
     font-family: $main-font;
+    @media only screen and (max-width: 599px){
+      font-size: 5vw;
+    }
   }
   @media only screen and (min-width: 900px)and (max-width: 1199px){
     margin-left: 6vw;

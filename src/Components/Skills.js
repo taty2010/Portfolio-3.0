@@ -14,9 +14,9 @@ const Skills = () => {
     setMove(window.scrollY);
   });
   // console.log(move);
-  const mobile = move > 100 ? "1" : "0";
-  const mobileMid = move > 200 ? "1" : "0";
-  const mobileBttm = move > 300 ? "1" : "0";
+  const mobile = move > 650 ? "1" : "0";
+  const mobileMid = move > 700 ? "1" : "0";
+  const mobileBttm = move > 750 ? "1" : "0";
   const scrollingTop = move > 1500 ? "1" : "0";
   const scrollingMid = move > 1600 ? "1" : "0";
   const scrollingBttm = move > 1800 ? "1" : "0";
