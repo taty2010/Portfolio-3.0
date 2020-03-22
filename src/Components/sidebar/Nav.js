@@ -10,9 +10,12 @@ export const DefaultNav = props => {
   return (
     <Nav className={`nav ${props.move >= 600 ? "fixed" : ""}`}>
       <ul>
-        <Link to="/">
+        {/* <Link to="/">
           <li>Home</li>
-        </Link>
+        </Link> */}
+        <a href="#skills">
+          <li>Skills</li>
+        </a>
         <a href="#projects">
           <li>Projects</li>
         </a>
@@ -34,6 +37,9 @@ export const NavContact = () => {
         <Link to="/">
           <li>Home</li>
         </Link>
+        <a href="#skills">
+          <li>Skills</li>
+        </a>
         <Link to="/projects">
           <li>Projects</li>
         </Link>
