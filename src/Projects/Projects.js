@@ -36,7 +36,7 @@ const Projects = () => {
                 className="socialBttn"
                 size="icon"
                 cssModule={styles}
-                type="link"
+                type="secondary"
                 href="https://relaxed-stallman-2387d1.netlify.com/"
                 target="_blank"
               >
