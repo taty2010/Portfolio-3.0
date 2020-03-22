@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-import About from "../About";
 import { ReactComponent as Wave } from "../Wave.svg";
 import { DefaultNav, FixedNav } from "../Components/sidebar/Nav";
-import Form from "./Form";
 import Projects from "../Projects/Projects";
-import Carousel from "../Projects/Carousel";
 import Skills from "./Skills";
 
 const Main = () => {
@@ -45,14 +41,9 @@ const Main = () => {
         </div>
         <div className="about-header">
           <h1>Hello</h1>
-          {/* <h3>
-            I am currently working as a Web Content Editor. Knowledgeable in
-            Front-End Development and gaining experience in Back-End.
-          </h3> */}
         </div>
       </div>
-      {/* <Carousel /> */}
-      <h3 className="aboutText">
+      <h3 id='about' className="aboutText">
         I am currently working as a Web Content Editor. Knowledgeable in
         Front-End Development and gaining experience in Back-End.
       </h3>

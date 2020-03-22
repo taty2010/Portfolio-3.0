@@ -8,25 +8,22 @@ export const DefaultNav = props => {
   `;
 
   return (
-    <Nav className={`nav ${props.move >= 600 ? "fixed" : ""}`}>
+    <nav className={`nav ${props.move >= 600 ? "fixed" : ""}`}>
       <ul>
-        {/* <Link to="/">
-          <li>Home</li>
-        </Link> */}
+        <a href="#about">
+          <li>About</li>
+        </a>
         <a href="#skills">
           <li>Skills</li>
         </a>
         <a href="#projects">
           <li>Projects</li>
         </a>
-        <a href="#about">
-          <li>About</li>
-        </a>
         <Link to="/contact">
           <li>Contact</li>
         </Link>
       </ul>
-    </Nav>
+    </nav>
   );
 };
 
