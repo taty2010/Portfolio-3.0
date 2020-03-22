@@ -17,9 +17,9 @@ const Skills = () => {
   const mobile = move > 100 ? "1" : "0";
   const mobileMid = move > 200 ? "1" : "0";
   const mobileBttm = move > 300 ? "1" : "0";
-  const scrollingTop = move > 600 ? "1" : "0";
-  const scrollingMid = move > 700 ? "1" : "0";
-  const scrollingBttm = move > 800 ? "1" : "0";
+  const scrollingTop = move > 1000 ? "1" : "0";
+  const scrollingMid = move > 1500 ? "1" : "0";
+  const scrollingBttm = move > 2000 ? "1" : "0";
 
   const Img = styled.img`
     opacity: ${scrollingTop};
