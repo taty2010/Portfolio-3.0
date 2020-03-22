@@ -107,9 +107,11 @@ h3{
     width: 18vw;
     padding-top: 5vh;
   }
+  
   @media only screen and (max-width: 1199px) and (min-width: 900px){
     width: 25vw;
   }
+  
   ul {
     text-decoration: none;
     list-style-type: none;
@@ -182,6 +184,7 @@ h3{
   @media only screen and (max-width: 1199px) and (min-width: 900px){
     padding-top: 2vh;
     padding-left: 3.5vw;
+
     background-image: none;
     border: none;
     ul{
@@ -195,7 +198,6 @@ h3{
   li{
     padding-top: 4.5vh;
      font-size: 2vw;
-     
   }
   h3 {
      display: none;
@@ -503,6 +505,7 @@ text-decoration: none;
   @media only screen and (max-width: 899px) and (min-width: 600px){
     left: 18vw;
   }
+
   @media only screen and (min-width: 900px)and (max-width: 1199px){
      top: 5vh;
      left: 25vw;
@@ -510,6 +513,7 @@ text-decoration: none;
   @media only screen and (min-width: 1200px){
     left:25vw;
   }
+
   ul {
     text-decoration: none;
     list-style-type: none;
@@ -588,7 +592,9 @@ text-decoration: none;
     left: 18vw;
     li{
       text-shadow: 2px 3px 0px #baa5bd99;
+
       font-size: 2.8vw;
+
     }
   }
   @media only screen and (min-width: 900px)and (max-width: 1199px){
