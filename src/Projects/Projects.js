@@ -38,7 +38,7 @@ const Projects = () => {
       {/* <NavContact /> */}
       {/* <Drip /> */}
       <div className="wrapper_projects">
-        <h1 id="projects">My Projects</h1>
+        <h1 id="projects">Projects</h1>
         <div className="projectBoxes">
           <div className="boxes2">
             <img src={`${proj1}`} alt="Project 1" />

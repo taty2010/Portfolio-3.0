@@ -44,14 +44,18 @@ const Main = () => {
           <DefaultNav move={move} />
         </div>
         <div className="about-header">
-          <h1>Hello,</h1>
-          <h3>
+          <h1>Hello</h1>
+          {/* <h3>
             I am currently working as a Web Content Editor. Knowledgeable in
             Front-End Development and gaining experience in Back-End.
-          </h3>
+          </h3> */}
         </div>
       </div>
       {/* <Carousel /> */}
+      <h3 className="aboutText">
+        I am currently working as a Web Content Editor. Knowledgeable in
+        Front-End Development and gaining experience in Back-End.
+      </h3>
       <Skills />
       <Projects />
       <div style={{ opacity: toTop }} className="toTop">
