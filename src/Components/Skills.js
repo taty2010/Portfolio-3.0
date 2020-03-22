@@ -13,13 +13,13 @@ const Skills = () => {
   document.addEventListener("scroll", () => {
     setMove(window.scrollY);
   });
-  console.log(move);
+  // console.log(move);
   const mobile = move > 100 ? "1" : "0";
   const mobileMid = move > 200 ? "1" : "0";
   const mobileBttm = move > 300 ? "1" : "0";
-  const scrollingTop = move > 1000 ? "1" : "0";
-  const scrollingMid = move > 1500 ? "1" : "0";
-  const scrollingBttm = move > 2000 ? "1" : "0";
+  const scrollingTop = move > 1500 ? "1" : "0";
+  const scrollingMid = move > 1600 ? "1" : "0";
+  const scrollingBttm = move > 1800 ? "1" : "0";
 
   const Img = styled.img`
     opacity: ${scrollingTop};

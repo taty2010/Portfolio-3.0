@@ -44,16 +44,11 @@ h3{
   --button-primary-color-light: #2e84b2;
   --button-primary-color-hover: #fda7d2;
   --button-primary-border: none;
-  --button-secondary-color: #fafafa;
-  --button-secondary-color-dark: #67cbc3;
-  --button-secondary-color-light: #349890;
-  --button-secondary-color-hover: #ecf9f8;
-  --button-secondary-border: 2px solid #b3e5e1;
-  --button-anchor-color: #95d44a;
-  --button-anchor-color-dark: #52a934;
-  --button-anchor-color-light: #3f8228;
-  --button-anchor-color-hover: #89cf35;
-  --button-anchor-border: 2px solid #5bbd3a;
+  --button-secondary-color: transparent;
+  --button-secondary-color-dark: #151c2e;
+  --button-secondary-color-light: white;
+  --button-secondary-color-hover: transparent;
+  --button-secondary-border: 1px solid #fb43c4;
   @media only screen and (max-width: 899px) and (min-width: 600px){
     --button-default-height: 40px;
     --button-default-border-radius: 30px;
@@ -84,6 +79,9 @@ h3{
   }
 }
 
+.socialBttn{
+  margin: 0 1vw;
+}
 
 .sidebar{
   width: 15vw;
@@ -692,6 +690,9 @@ text-decoration: none;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
     width: 20vw
   }
+  @media only screen and (min-width: 1451px){
+    width: 18vw
+  }
 }
 .html{
   left: 0;
@@ -703,6 +704,9 @@ text-decoration: none;
     width: 25vw
   }
   @media only screen and (min-width: 1312px) and (max-width: 1450px){
+    width: 20vw
+  }
+  @media only screen and (min-width: 1451px){
     width: 20vw
   }
 }
@@ -718,6 +722,9 @@ text-decoration: none;
   @media only screen and (min-width: 1312px) and (max-width: 1450px){
     width: 20vw
   }
+  @media only screen and (min-width: 1451px){
+    width: 20vw
+  }
 }
 .less{
   left: 5vw;
@@ -729,6 +736,9 @@ text-decoration: none;
   }
   @media only screen and (min-width: 1312px) and (max-width: 1450px){
     width: 25vw
+  }
+  @media only screen and (min-width: 1451px){
+    width: 18vw
   }
 }
 .ps{
@@ -745,6 +755,10 @@ text-decoration: none;
   @media only screen and (min-width: 1312px) and (max-width: 1450px){
     width: 20vw
   }
+  @media only screen and (min-width: 1451px){
+    width: 20vw;
+    right: 0;
+  }
 }
 .react{
   right: 30px;
@@ -756,6 +770,9 @@ text-decoration: none;
   }
   @media only screen and (min-width: 1312px) and (max-width: 1450px){
     width: 25vw
+  }
+  @media only screen and (min-width: 1451px){
+    width: 18vw
   }
 }
 
@@ -881,10 +898,15 @@ text-decoration: none;
     flex-flow: row;
     justify-content: left;
     align-items: center;
-    background-color: white;
+    background-color: transparent;
     padding: 2vw;
     border-radius: 25px;
     box-shadow: 5px 5px 10px 2px #6d618b;
+    color: white;
+    &:hover{
+      background-color: white;
+      color: black;
+    }
     @media only screen and (max-width: 599px){
       flex-flow: column wrap;
       width: 45vw;
