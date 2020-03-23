@@ -28,14 +28,20 @@ const SideBar = () => {
       </span>
       <ul>
         <li>
+          <a href='https://github.com/taty2010' target='_blank'>
           <i className="fab fa-github" />
+          </a>
         </li>
         <li>
+          <a href='https://www.linkedin.com/in/tatyana-novell-b0168bb1' target='_blank'>
           <i className="fab fa-linkedin" />
+          </a>
         </li>
-        <li>
-          <i className="fab fa-twitter-square" />
-        </li>
+        {/* <li>
+          <a href='www.linkedin.com/in/tatyana-novell-b0168bb1'>
+            <i className="fab fa-twitter-square" />
+          </a>
+        </li> */}
       </ul>
     </div>
   );
