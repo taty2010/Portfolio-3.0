@@ -470,16 +470,12 @@ text-decoration: none;
     left: 16vw;
     li{
       font-size: 3vw;
-      text-shadow: 2px 3px 0px #baa5bd99;
     }
   }
   @media only screen and (max-width: 899px) and (min-width: 600px){
     left: 18vw;
     li{
-      text-shadow: 2px 3px 0px #baa5bd99;
-
       font-size: 2.8vw;
-
     }
   }
   @media only screen and (min-width: 900px)and (max-width: 1199px){
@@ -493,7 +489,6 @@ text-decoration: none;
 }
 
 .toTop{
-  width: 50vw;
   position: relative;
   top: 90vh;
   left: 50vw;
@@ -780,8 +775,9 @@ text-decoration: none;
       color: black;
     }
     @media only screen and (max-width: 599px){
-      flex-flow: column wrap;
-      width: 90vw;
+      flex-flow: column;
+      height: 60vh;
+      width: 75vw;
       padding: 5vh 0;
     }
     @media only screen and (max-width: 899px) and (min-width: 600px){
