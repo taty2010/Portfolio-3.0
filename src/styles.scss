@@ -176,6 +176,9 @@ h3{
       width: 4vw;
       height: 6vh;
       margin-top: 15vh;
+      @media only screen and (min-width: 1200px){
+        width: 3vw;
+      }
   }
   .sidebar_bttn{
     i{
@@ -204,6 +207,10 @@ h3{
   border-radius: 100px;
   margin: 5% auto;
   margin-bottom: 20%;
+  @media only screen and (min-width: 1200px){
+    width: 7vw;
+    margin-top: 15vh;
+  }
   @media only screen and (max-width: 800px){
     height: 10vh;
   }
@@ -212,6 +219,7 @@ h3{
     height: 13vh;
     margin: 2.5% auto;
   }
+
 }
 
 .profileImg:hover {
@@ -282,8 +290,12 @@ h3{
       top: 22vh;
       border: 1px solid white;
       padding: 0 2vw;
-      @media only screen and (min-width: 1200px){
+      @media only screen and (min-width: 1500px){
+        font-size: 8vw;
+      }
+      @media only screen and (min-width: 1200px) and (max-width: 1499px){
         font-size: 10vw;
+        left: 30vw;
       }
       @media only screen and (min-width: 900px)and (max-width: 1199px){
         top: 20vh;
@@ -291,6 +303,7 @@ h3{
       }
       @media only screen and (max-width: 899px) and (min-width: 600px){
         top:32vh;
+        left: 40vw;
       }
   }
   h3 {
@@ -337,18 +350,22 @@ h3{
   top: 48vh;
   bottom: 0;
   transition: top .4s linear;
-  @media only screen and (min-width: 1200px){
+  @media only screen and (min-width: 1500px){
+    width: 100vw;
+    top: -75vh;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1499px){
     width: 100vw;
     top: -500px;
   }
   @media only screen and (min-width: 900px)and (max-width: 1199px){
     width: 100vw;
     left: -1px;
-     top: -30vh;
+     top: -40vh;
   }
   @media only screen and (max-width: 899px) and (min-width: 600px){
     width: 100vw;
-    top: 0vh;
+    top: -20vh;
     left: -5px;
   }
   @media only screen and (max-width: 599px){
@@ -457,9 +474,9 @@ text-decoration: none;
   width: auto;
   text-align: center;
   @media only screen and (max-width: 899px) and (min-width: 600px){
-    top: 0;
+    top: 2px;
     left: 25vw;
-    width: 62vw;
+    width: auto;
   }
   ul{
   margin: 0;
@@ -532,8 +549,14 @@ text-decoration: none;
 }
 
 .skills{
-  margin-top: 50vh;
-  margin-left: 25vw;
+  margin: 50vh 0 15vh 25vw;
+  height: auto;
+  @media only screen and (min-width:1200px){
+    height: 120vh;
+  }
+  @media only screen and (min-width: 1312px){
+    height: 170vh;
+  }
   .skills_blob{
     position: relative;
     &:hover{
@@ -571,7 +594,7 @@ text-decoration: none;
   opacity: 0;
   transition: opacity 1s;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
-    width: 25vw
+    width: 20vw
   }
   @media only screen and (min-width: 1312px) and (max-width: 1450px){
     width: 20vw
@@ -587,7 +610,7 @@ text-decoration: none;
   opacity: 0;
   transition: opacity 1s;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
-    width: 25vw
+    width: 20vw
   }
   @media only screen and (min-width: 1312px) and (max-width: 1450px){
     width: 20vw
@@ -602,7 +625,7 @@ text-decoration: none;
   opacity: 0;
   transition: opacity 1s;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
-    width: 25vw
+    width: 18vw
   }
   @media only screen and (min-width: 1312px) and (max-width: 1450px){
     width: 25vw
@@ -620,10 +643,14 @@ text-decoration: none;
   opacity: 0;
   transition: opacity 1s;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
-    width: 20vw
+    width: 18vw;
+    top: 30vh;
+    right: 8vw;
   }
   @media only screen and (min-width: 1312px) and (max-width: 1450px){
-    width: 20vw
+    width: 20vw;
+    top: 45vh;
+    right: 8vw;
   }
   @media only screen and (min-width: 1451px){
     width: 20vw;
@@ -636,13 +663,17 @@ text-decoration: none;
   opacity: 0;
   transition: opacity 1s;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
-    width: 25vw
+    width: 18vw;
+    right: 10vw;
+    top: 18vh;
   }
   @media only screen and (min-width: 1312px) and (max-width: 1450px){
-    width: 25vw
+    width: 25vw;
+    right: 20vw;
+    top: 20vh;
   }
   @media only screen and (min-width: 1451px){
-    width: 18vw
+    width: 18vw;
   }
 }
 
@@ -757,7 +788,7 @@ text-decoration: none;
 .boxes2{
     width: 65vw;
     height: 50vh;
-    margin: 2vw;
+    margin: 15vh 2vw;
     text-align: center;
     z-index: -2;
     display: flex;
@@ -767,13 +798,13 @@ text-decoration: none;
     background-color: transparent;
     padding: 2vw;
     border-radius: 25px;
-    border: 1px solid #efaaf591;
-    box-shadow: inset -4px 1px 2px 1px #583a61b3;
+    // border: 1px solid #efaaf591;
+    // box-shadow: inset -4px 1px 2px 1px #583a61b3;
     color: white;
-    &:hover{
-      background-color: rgba(255, 255, 255, 0.575);
-      color: black;
-    }
+    // &:hover{
+    //   background-color: rgba(255, 255, 255, 0.575);
+    //   color: black;
+    // }
     @media only screen and (max-width: 599px){
       flex-flow: column;
       height: 60vh;
@@ -800,7 +831,7 @@ text-decoration: none;
         width: 60%;
       }
       @media only screen and (min-width: 900px)and (max-width: 1199px){
-        width: 50%;
+        width: 60%;
       }
       // @media only screen and (min-width: 1200px){
       //   width: 80%;

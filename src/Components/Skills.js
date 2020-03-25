@@ -13,7 +13,7 @@ const Skills = () => {
   document.addEventListener("scroll", () => {
     setMove(window.scrollY);
   });
-  // console.log(move);
+   console.log(move);
   const mobile = move > 650 ? "1" : "0";
   const mobileMid = move > 700 ? "1" : "0";
   const mobileBttm = move > 750 ? "1" : "0";
@@ -26,6 +26,9 @@ const Skills = () => {
     @media only screen and (max-width: 599px) {
       opacity: ${mobile};
     }
+    @media only screen and (min-width: 1200px){
+      opacity: ${move > 1700 ? "1" : "0"}
+    }
   `;
 
   const ImgMid = styled.img`
@@ -33,12 +36,18 @@ const Skills = () => {
     @media only screen and (max-width: 599px) {
       opacity: ${mobileMid};
     }
+    @media only screen and (min-width: 1200px){
+      opacity: ${move > 2000 ? "1" : "0"}
+    }
   `;
 
   const ImgBttm = styled.img`
     opacity: ${scrollingBttm};
     @media only screen and (max-width: 599px) {
       opacity: ${mobileBttm};
+    }
+    @media only screen and (min-width: 1200px){
+      opacity: ${move > 2300 ? "1" : "0"}
     }
   `;
 

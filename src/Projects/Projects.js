@@ -5,7 +5,7 @@ import {
   AwesomeButtonSocial
 } from "react-awesome-button";
 import styles from "../webBttn.scss";
-import proj4 from '../img/Breweries.png';
+import proj4 from '../img/Breweriessq.png';
 import proj5 from '../img/cheftopia.png';
 
 const Projects = () => {
