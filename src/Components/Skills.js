@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 // import { Css, Html, Js, Less } from "./blob2";
-import css from "../img/css.png";
-import JS from "../img/JS.png";
-import html from "../img/html.png";
-import LESS from "../img/LESS.png";
-import Ps from "../img/Ps.png";
-import ReactJs from "../img/React.png";
+import css from "../img/css2.png";
+import JS from "../img/js2.png";
+import html from "../img/html2.png";
+import LESS from "../img/less2.png";
+import Ps from "../img/ps2.png";
+import ReactJs from "../img/reactjs2.png";
 import styled from "styled-components";
 
 const Skills = () => {

@@ -420,7 +420,7 @@ text-decoration: none;
     font-weight: bold;
     margin: 0 2.5vw;
     font-family: $main-font;
-    text-shadow: 3px 1px 1px #f197aa;
+    // text-shadow: 3px 1px 1px #f197aa;
     &:hover{
       text-shadow: 3px 1px 1px white;
       color: #f08aa0;
@@ -451,7 +451,7 @@ text-decoration: none;
   border-radius: 25px;
   position: fixed;
   top: 1vh;
-  left:20vw;
+  left:25vw;
   margin: 0;
   z-index: 10;
   width: auto;
@@ -490,10 +490,6 @@ text-decoration: none;
     left:25vw;
   }
 }
-  li {
-    text-shadow: 2px 3px 0px #baa5bd;
-  }
-
 }
 
 .toTop{
@@ -506,6 +502,9 @@ text-decoration: none;
   color: rgba(40, 38, 80, 0.83);
   position: fixed;
   cursor: pointer;
+  @media only screen and (min-width: 1200px){
+    font-size: 3.5vw;
+  }
 }
 
 .about{
@@ -543,7 +542,7 @@ text-decoration: none;
   .skills_blob{
     position: relative;
     &:hover{
-      transform: scale(1.1);
+      transform: scale(1.1) translate(10%, 0);
     }
   }
   .skills_header{
@@ -752,27 +751,23 @@ text-decoration: none;
   }
 }
 
-// .projectBoxes{
-//   display: flex;
-//     flex-flow: row wrap;
-//     justify-content: center;
-//     width: 80vw;
-//     height: auto;
-//     margin-top: 10vh;
-//     margin-bottom: 35vh;
-//     @media only screen and (max-width: 899px) and (min-width: 600px){
-//       margin-top: 10vh;
-//     }
-// }
+.projectBoxes{
+    margin-top: 10vh;
+    margin-bottom: 35vh;
+    @media only screen and (max-width: 899px) and (min-width: 600px){
+      margin-top: 10vh;
+    }
+}
 
 .boxes2{
     width: 65vw;
+    height: 50vh;
     margin: 2vw;
     text-align: center;
     z-index: -2;
     display: flex;
     flex-flow: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     background-color: transparent;
     padding: 2vw;
@@ -790,14 +785,15 @@ text-decoration: none;
       padding: 5vh 0;
     }
     @media only screen and (max-width: 899px) and (min-width: 600px){
-      flex-flow: column wrap;
-    }
-    @media only screen and (min-width: 1200px){
-      width: 35vw;
-      height: auto;
-      padding: 2.5vh 0;
       flex-flow: column;
+      height: 68vh;
     }
+    // @media only screen and (min-width: 1200px){
+    //   width: 35vw;
+    //   height: auto;
+    //   padding: 2.5vh 0;
+    //   flex-flow: column wrap;
+    // }
     img{
       width: 45%;
       box-shadow: 7px 4px 9px #80808096;
@@ -810,9 +806,9 @@ text-decoration: none;
       @media only screen and (min-width: 900px)and (max-width: 1199px){
         width: 50%;
       }
-      @media only screen and (min-width: 1200px){
-        width: 80%;
-      }
+      // @media only screen and (min-width: 1200px){
+      //   width: 80%;
+      // }
     }
 }
 
@@ -827,7 +823,7 @@ text-decoration: none;
     margin-left: 6vw;
   }
   @media only screen and (min-width: 1200px){
-  // margin-left: 5vw;
+   margin-left: 5vw;
   }
 }
 
