@@ -107,7 +107,7 @@ const Projects = () => {
                 className="socialBttn"
                 size="icon"
                 type="secondary"
-                href='https://blissful-davinci-0747a7.netlify.com/'
+                href='https://csb-0myoe.netlify.com/'
                 target='_blank'
               >
                 <i class="fas fa-globe" />
