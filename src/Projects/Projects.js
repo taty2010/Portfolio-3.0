@@ -31,7 +31,7 @@ const Projects = () => {
                 className="socialBttn"
                 size="icon"
                 type="github"
-                href="https://github.com/taty2010/nasa-photo-of-the-day/tree/master"
+                href="https://codesandbox.io/s/nasa-apod-bthu5"
                 target='_blank'
               />
               <AwesomeButton
