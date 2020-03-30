@@ -34,7 +34,7 @@ export const NavContact = () => {
         <Link to="/">
           <li>Home</li>
         </Link>
-        <a href="#skills">
+        {/* <a href="#skills">
           <li>Skills</li>
         </a>
         <Link to="/projects">
@@ -45,7 +45,7 @@ export const NavContact = () => {
         </a>
         <Link to="/contact">
           <li>Contact</li>
-        </Link>
+        </Link> */}
       </ul>
     </nav>
   );
