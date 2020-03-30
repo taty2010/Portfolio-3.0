@@ -286,7 +286,7 @@ h3{
     font-family: $main-font;
       position: inherit;
       font-size: 8vw;
-      left: 30vw;
+      left: 35vw;
       top: 22vh;
       border: 1px solid white;
       padding: 0 2vw;
@@ -551,6 +551,7 @@ text-decoration: none;
 .skills{
   margin: 50vh 0 15vh 25vw;
   height: auto;
+  padding-top:15vh;
   @media only screen and (min-width:1200px){
     height: 120vh;
   }
@@ -559,6 +560,7 @@ text-decoration: none;
   }
   .skills_blob{
     position: relative;
+    transition: transform 5s, opacity 10s ease-in-out;
     &:hover{
       transform: scale(1.1) translate(10%, 0);
     }
@@ -579,7 +581,6 @@ text-decoration: none;
   top: 0;
   width: 25vw;
   opacity: 0;
-  transition: opacity 1s;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
     width: 20vw
   }
@@ -587,12 +588,21 @@ text-decoration: none;
     width: 18vw
   }
 }
+
+.fade-in {
+  animation: fadeIn .5s ease-in 1 forwards;
+}
+
+.is-paused {
+  animation-play-state: paused;
+}
+
 .html{
   left: 0;
   bottom: 30px;
   width: 25vw;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 5s;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
     width: 20vw
   }
@@ -608,7 +618,7 @@ text-decoration: none;
   right: 20vw;
   width: 25vw;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 5s;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
     width: 20vw
   }
@@ -623,7 +633,7 @@ text-decoration: none;
   left: 5vw;
   width: 28vw;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 5s;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
     width: 18vw
   }
@@ -641,7 +651,7 @@ text-decoration: none;
   /* left: 15vw; */
   width: 25vw;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 5s;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
     width: 18vw;
     top: 30vh;
@@ -661,7 +671,7 @@ text-decoration: none;
   right: 30px;
   width: 28vw;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 5s;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
     width: 18vw;
     right: 10vw;
@@ -682,6 +692,7 @@ text-decoration: none;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    padding-top: 20vh;
     // height: 2500px;
     @media only screen and (max-width: 599px){
       margin-top: 35vh;
@@ -842,6 +853,7 @@ text-decoration: none;
 .proj-desc{
   h3{
     font-family: $main-font;
+    width: 25vw;
     @media only screen and (max-width: 599px){
       font-size: 5vw;
     }
