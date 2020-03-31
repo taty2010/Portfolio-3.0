@@ -8,6 +8,7 @@ import styles from "../webBttn.scss";
 import proj4 from '../img/Breweriessq.png';
 import proj5 from '../img/cheftopia.png';
 import proj1 from '../img/nasasq.png'
+import proj6 from '../img/wedding.png'
 
 const Projects = () => {
   // const proj1 = "https://www.dropbox.com/s/6z2u3f1ddokcq6e/proj5Sq.png?raw=1";
@@ -26,7 +27,7 @@ const Projects = () => {
             <img src={`${proj1}`} alt="Project 1" />
             <div className="proj-desc">
               <h3>Nasa Photo of the Day</h3>
-              <p>Brief description of project here</p>
+              <p>Click through the Nasa APOD API for<br/> their photo/video of the day</p>
               <AwesomeButtonSocial
                 className="socialBttn"
                 size="icon"
@@ -72,7 +73,7 @@ const Projects = () => {
             <img src={`${proj3}`} alt="Project 3" />
             <div className="proj-desc">
               <h3>Art Portfolio</h3>
-              <p>Brief description of project here</p>
+              <p>Landing Page for website where artists<br/> can share their work</p>
               <AwesomeButtonSocial
                 className="socialBttn"
                 size="icon"
@@ -95,7 +96,7 @@ const Projects = () => {
             <img src={`${proj4}`} alt="Project 1" />
             <div className="proj-desc">
               <h3>Explore Breweries</h3>
-              <p>Brief description of project here</p>
+              <p>Page created with the Brewery APi that allows <br/>user's to search for breweries  </p>
               <AwesomeButtonSocial
                 className="socialBttn"
                 size="icon"
@@ -118,7 +119,7 @@ const Projects = () => {
             <img src={`${proj5}`} alt="Project 2" />
             <div className="proj-desc">
               <h3>Cheftopia</h3>
-              <p>Brief description of project here</p>
+              <p>Website where Chefs can post and share their recipe's</p>
               <AwesomeButtonSocial
                 className="socialBttn"
                 size="icon"
@@ -137,25 +138,29 @@ const Projects = () => {
               </AwesomeButton>
             </div>
           </div>
-          {/* <div className="boxes2">
-            <img src={`${proj3}`} alt="Project 3" />
+          <div className="boxes2">
+            <img src={`${proj6}`} alt="Project 3" />
             <div className="proj-desc">
-              <h3>Project Name Here</h3>
-              <p>Brief description of project here</p>
+              <h3>Wedding Portfolio</h3>
+              <p>Portfolio website created for wedding planner's to post their <br/>work and gain new clients.</p>
               <AwesomeButtonSocial
                 className="socialBttn"
                 size="icon"
                 type="github"
+                href='https://github.com/taty2010/Original-wedding-planner/tree/tatyana-novell'
+                target='_blank'
               />
               <AwesomeButton
                 className="socialBttn"
                 size="icon"
                 type="secondary"
+                href='https://angry-nightingale-5ebd83.netlify.com/'
+                target='_blank'
               >
                 <i class="fas fa-globe" />
               </AwesomeButton>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
