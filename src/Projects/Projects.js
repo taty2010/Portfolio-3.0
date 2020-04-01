@@ -8,6 +8,7 @@ import styles from "../webBttn.scss";
 import proj4 from '../img/Breweriessq.png';
 import proj5 from '../img/cheftopia.png';
 import proj1 from '../img/nasasq.png'
+import proj6 from '../img/wedding.png'
 
 const Projects = () => {
   // const proj1 = "https://www.dropbox.com/s/6z2u3f1ddokcq6e/proj5Sq.png?raw=1";
@@ -26,23 +27,25 @@ const Projects = () => {
             <img src={`${proj1}`} alt="Project 1" />
             <div className="proj-desc">
               <h3>Nasa Photo of the Day</h3>
-              <p>Brief description of project here</p>
-              <AwesomeButtonSocial
-                className="socialBttn"
-                size="icon"
-                type="github"
-                href="https://codesandbox.io/s/nasa-apod-bthu5"
-                target='_blank'
-              />
-              <AwesomeButton
-                className="socialBttn"
-                size="icon"
-                type="secondary"
-                href='https://csb-bthu5.netlify.com/'
-                target="_blank"
-              >
-                <i class="fas fa-globe" />
-              </AwesomeButton>
+              <p>Click through the Nasa APOD API for<br/> their photo/video of the day</p>
+              <div className='bttn-wrap'>
+                <AwesomeButtonSocial
+                  className="socialBttn"
+                  size="icon"
+                  type="github"
+                  href="https://codesandbox.io/s/nasa-apod-bthu5"
+                  target='_blank'
+                />
+                <AwesomeButton
+                  className="socialBttn"
+                  size="icon"
+                  type="secondary"
+                  href='https://csb-bthu5.netlify.com/'
+                  target="_blank"
+                >
+                  <i class="fas fa-globe" />
+                </AwesomeButton>
+              </div>
             </div>
           </div>
           <div className="boxes2">
@@ -50,112 +53,126 @@ const Projects = () => {
             <div className="proj-desc">
               <h3>Resume</h3>
               <p>Created a resume template with HTML/CSS</p>
-              <AwesomeButtonSocial
-                className="socialBttn"
-                size="icon"
-                type="github"
-                href='https://github.com/taty2010/Preprocessing-I'
-                target='_blank'
-              />
-              <AwesomeButton
-                className="socialBttn"
-                size="icon"
-                type="secondary"
-                href='https://taty2010.github.io/Preprocessing-I/'
-                target='_blank'
-              >
-                <i class="fas fa-globe" />
-              </AwesomeButton>
+              <div className='bttn-wrap'>
+                <AwesomeButtonSocial
+                  className="socialBttn"
+                  size="icon"
+                  type="github"
+                  href='https://github.com/taty2010/Preprocessing-I'
+                  target='_blank'
+                />
+                <AwesomeButton
+                  className="socialBttn"
+                  size="icon"
+                  type="secondary"
+                  href='https://taty2010.github.io/Preprocessing-I/'
+                  target='_blank'
+                >
+                  <i class="fas fa-globe" />
+                </AwesomeButton>
+              </div>
             </div>
           </div>
           <div className="boxes2">
             <img src={`${proj3}`} alt="Project 3" />
             <div className="proj-desc">
               <h3>Art Portfolio</h3>
-              <p>Brief description of project here</p>
-              <AwesomeButtonSocial
-                className="socialBttn"
-                size="icon"
-                type="github"
-                href='https://github.com/Team-Art/Splash_Page'
-                target='_blank'
-              />
-              <AwesomeButton
-                className="socialBttn"
-                size="icon"
-                type="secondary"
-                href='https://team-art.github.io/Splash_Page'
-                target='_blank'
-              >
-                <i class="fas fa-globe" />
-              </AwesomeButton>
+              <p>Landing Page for website where artists<br/> can share their work</p>
+              <div className='bttn-wrap'>
+                <AwesomeButtonSocial
+                  className="socialBttn"
+                  size="icon"
+                  type="github"
+                  href='https://github.com/Team-Art/Splash_Page'
+                  target='_blank'
+                />
+                <AwesomeButton
+                  className="socialBttn"
+                  size="icon"
+                  type="secondary"
+                  href='https://team-art.github.io/Splash_Page'
+                  target='_blank'
+                >
+                  <i class="fas fa-globe" />
+                </AwesomeButton>
+              </div>
             </div>
           </div>
           <div className="boxes2">
             <img src={`${proj4}`} alt="Project 1" />
             <div className="proj-desc">
               <h3>Explore Breweries</h3>
-              <p>Brief description of project here</p>
-              <AwesomeButtonSocial
-                className="socialBttn"
-                size="icon"
-                type="github"
-                href='https://github.com/taty2010/React-Redux-App/tree/tatyana-novell'
-                target='_blank'
-              />
-              <AwesomeButton
-                className="socialBttn"
-                size="icon"
-                type="secondary"
-                href='https://csb-0myoe.netlify.com/'
-                target='_blank'
-              >
-                <i class="fas fa-globe" />
-              </AwesomeButton>
+              <p>Page created with the Brewery APi that allows <br/>user's to search for breweries  </p>
+              <div className='bttn-wrap'>
+                <AwesomeButtonSocial
+                  className="socialBttn"
+                  size="icon"
+                  type="github"
+                  href='https://github.com/taty2010/React-Redux-App/tree/tatyana-novell'
+                  target='_blank'
+                />
+                <AwesomeButton
+                  className="socialBttn"
+                  size="icon"
+                  type="secondary"
+                  href='https://csb-0myoe.netlify.com/'
+                  target='_blank'
+                >
+                  <i class="fas fa-globe" />
+                </AwesomeButton>
+              </div>
             </div>
           </div>
           <div className="boxes2">
             <img src={`${proj5}`} alt="Project 2" />
             <div className="proj-desc">
               <h3>Cheftopia</h3>
-              <p>Brief description of project here</p>
-              <AwesomeButtonSocial
-                className="socialBttn"
-                size="icon"
-                type="github"
-                href='https://github.com/Chef-Portfolio3/Front-end'
-                target='_blank'
-              />
-              <AwesomeButton
-                className="socialBttn"
-                size="icon"
-                type="secondary"
-                href='https://fervent-bose-6a1f1a.netlify.com/'
-                target='_blank'
-              >
-                <i class="fas fa-globe" />
-              </AwesomeButton>
+              <p>Website where Chefs can post and share their recipe's</p>
+              <div className='bttn-wrap'>
+                <AwesomeButtonSocial
+                  className="socialBttn"
+                  size="icon"
+                  type="github"
+                  href='https://github.com/Chef-Portfolio3/Front-end'
+                  target='_blank'
+                />
+                <AwesomeButton
+                  className="socialBttn"
+                  size="icon"
+                  type="secondary"
+                  href='https://fervent-bose-6a1f1a.netlify.com/'
+                  target='_blank'
+                >
+                  <i class="fas fa-globe" />
+                </AwesomeButton>
+              </div>
             </div>
           </div>
-          {/* <div className="boxes2">
-            <img src={`${proj3}`} alt="Project 3" />
+          <div className="boxes2">
+            <img src={`${proj6}`} alt="Project 3" />
             <div className="proj-desc">
-              <h3>Project Name Here</h3>
-              <p>Brief description of project here</p>
-              <AwesomeButtonSocial
-                className="socialBttn"
-                size="icon"
-                type="github"
-              />
-              <AwesomeButton
-                className="socialBttn"
-                size="icon"
-                type="secondary"
-              >
-                <i class="fas fa-globe" />
-              </AwesomeButton>
+              <h3>Wedding Portfolio</h3>
+              <p>Portfolio website created for wedding planner's to post their <br/>work and gain new clients.</p>
+              <div className='bttn-wrap'>
+                <AwesomeButtonSocial
+                  className="socialBttn"
+                  size="icon"
+                  type="github"
+                  href='https://github.com/taty2010/Original-wedding-planner/tree/tatyana-novell'
+                  target='_blank'
+                />
+                <AwesomeButton
+                  className="socialBttn"
+                  size="icon"
+                  type="secondary"
+                  href='https://angry-nightingale-5ebd83.netlify.com/'
+                  target='_blank'
+                >
+                  <i class="fas fa-globe" />
+                </AwesomeButton>
+              </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>

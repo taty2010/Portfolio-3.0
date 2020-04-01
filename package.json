@@ -19,6 +19,7 @@
     "react-router-dom": "5.1.2",
     "react-scripts": "3.0.1",
     "sass": "1.26.2",
+    "simple-parallax-js": "^5.3.0",
     "styled-components": "5.0.1",
     "svg-parser": "^2.0.3"
   },
