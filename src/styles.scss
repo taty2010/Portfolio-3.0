@@ -289,6 +289,7 @@ h3{
       left: 20vw;
       top: 22vh;
       width: 60vw;
+      z-index: -4;
       // border: 1px solid white;
       padding: 0 2vw;
       @media only screen and (min-width: 1500px){
@@ -351,6 +352,7 @@ h3{
   top: 48vh;
   bottom: 0;
   transition: top .4s linear;
+  z-index: -5;
   @media only screen and (min-width: 1500px){
     top: -75vh;
   }
