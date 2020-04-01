@@ -28,22 +28,24 @@ const Projects = () => {
             <div className="proj-desc">
               <h3>Nasa Photo of the Day</h3>
               <p>Click through the Nasa APOD API for<br/> their photo/video of the day</p>
-              <AwesomeButtonSocial
-                className="socialBttn"
-                size="icon"
-                type="github"
-                href="https://codesandbox.io/s/nasa-apod-bthu5"
-                target='_blank'
-              />
-              <AwesomeButton
-                className="socialBttn"
-                size="icon"
-                type="secondary"
-                href='https://csb-bthu5.netlify.com/'
-                target="_blank"
-              >
-                <i class="fas fa-globe" />
-              </AwesomeButton>
+              <div className='bttn-wrap'>
+                <AwesomeButtonSocial
+                  className="socialBttn"
+                  size="icon"
+                  type="github"
+                  href="https://codesandbox.io/s/nasa-apod-bthu5"
+                  target='_blank'
+                />
+                <AwesomeButton
+                  className="socialBttn"
+                  size="icon"
+                  type="secondary"
+                  href='https://csb-bthu5.netlify.com/'
+                  target="_blank"
+                >
+                  <i class="fas fa-globe" />
+                </AwesomeButton>
+              </div>
             </div>
           </div>
           <div className="boxes2">
@@ -51,22 +53,24 @@ const Projects = () => {
             <div className="proj-desc">
               <h3>Resume</h3>
               <p>Created a resume template with HTML/CSS</p>
-              <AwesomeButtonSocial
-                className="socialBttn"
-                size="icon"
-                type="github"
-                href='https://github.com/taty2010/Preprocessing-I'
-                target='_blank'
-              />
-              <AwesomeButton
-                className="socialBttn"
-                size="icon"
-                type="secondary"
-                href='https://taty2010.github.io/Preprocessing-I/'
-                target='_blank'
-              >
-                <i class="fas fa-globe" />
-              </AwesomeButton>
+              <div className='bttn-wrap'>
+                <AwesomeButtonSocial
+                  className="socialBttn"
+                  size="icon"
+                  type="github"
+                  href='https://github.com/taty2010/Preprocessing-I'
+                  target='_blank'
+                />
+                <AwesomeButton
+                  className="socialBttn"
+                  size="icon"
+                  type="secondary"
+                  href='https://taty2010.github.io/Preprocessing-I/'
+                  target='_blank'
+                >
+                  <i class="fas fa-globe" />
+                </AwesomeButton>
+              </div>
             </div>
           </div>
           <div className="boxes2">
@@ -74,22 +78,24 @@ const Projects = () => {
             <div className="proj-desc">
               <h3>Art Portfolio</h3>
               <p>Landing Page for website where artists<br/> can share their work</p>
-              <AwesomeButtonSocial
-                className="socialBttn"
-                size="icon"
-                type="github"
-                href='https://github.com/Team-Art/Splash_Page'
-                target='_blank'
-              />
-              <AwesomeButton
-                className="socialBttn"
-                size="icon"
-                type="secondary"
-                href='https://team-art.github.io/Splash_Page'
-                target='_blank'
-              >
-                <i class="fas fa-globe" />
-              </AwesomeButton>
+              <div className='bttn-wrap'>
+                <AwesomeButtonSocial
+                  className="socialBttn"
+                  size="icon"
+                  type="github"
+                  href='https://github.com/Team-Art/Splash_Page'
+                  target='_blank'
+                />
+                <AwesomeButton
+                  className="socialBttn"
+                  size="icon"
+                  type="secondary"
+                  href='https://team-art.github.io/Splash_Page'
+                  target='_blank'
+                >
+                  <i class="fas fa-globe" />
+                </AwesomeButton>
+              </div>
             </div>
           </div>
           <div className="boxes2">
@@ -97,22 +103,24 @@ const Projects = () => {
             <div className="proj-desc">
               <h3>Explore Breweries</h3>
               <p>Page created with the Brewery APi that allows <br/>user's to search for breweries  </p>
-              <AwesomeButtonSocial
-                className="socialBttn"
-                size="icon"
-                type="github"
-                href='https://github.com/taty2010/React-Redux-App/tree/tatyana-novell'
-                target='_blank'
-              />
-              <AwesomeButton
-                className="socialBttn"
-                size="icon"
-                type="secondary"
-                href='https://csb-0myoe.netlify.com/'
-                target='_blank'
-              >
-                <i class="fas fa-globe" />
-              </AwesomeButton>
+              <div className='bttn-wrap'>
+                <AwesomeButtonSocial
+                  className="socialBttn"
+                  size="icon"
+                  type="github"
+                  href='https://github.com/taty2010/React-Redux-App/tree/tatyana-novell'
+                  target='_blank'
+                />
+                <AwesomeButton
+                  className="socialBttn"
+                  size="icon"
+                  type="secondary"
+                  href='https://csb-0myoe.netlify.com/'
+                  target='_blank'
+                >
+                  <i class="fas fa-globe" />
+                </AwesomeButton>
+              </div>
             </div>
           </div>
           <div className="boxes2">
@@ -120,22 +128,24 @@ const Projects = () => {
             <div className="proj-desc">
               <h3>Cheftopia</h3>
               <p>Website where Chefs can post and share their recipe's</p>
-              <AwesomeButtonSocial
-                className="socialBttn"
-                size="icon"
-                type="github"
-                href='https://github.com/Chef-Portfolio3/Front-end'
-                target='_blank'
-              />
-              <AwesomeButton
-                className="socialBttn"
-                size="icon"
-                type="secondary"
-                href='https://fervent-bose-6a1f1a.netlify.com/'
-                target='_blank'
-              >
-                <i class="fas fa-globe" />
-              </AwesomeButton>
+              <div className='bttn-wrap'>
+                <AwesomeButtonSocial
+                  className="socialBttn"
+                  size="icon"
+                  type="github"
+                  href='https://github.com/Chef-Portfolio3/Front-end'
+                  target='_blank'
+                />
+                <AwesomeButton
+                  className="socialBttn"
+                  size="icon"
+                  type="secondary"
+                  href='https://fervent-bose-6a1f1a.netlify.com/'
+                  target='_blank'
+                >
+                  <i class="fas fa-globe" />
+                </AwesomeButton>
+              </div>
             </div>
           </div>
           <div className="boxes2">
@@ -143,22 +153,24 @@ const Projects = () => {
             <div className="proj-desc">
               <h3>Wedding Portfolio</h3>
               <p>Portfolio website created for wedding planner's to post their <br/>work and gain new clients.</p>
-              <AwesomeButtonSocial
-                className="socialBttn"
-                size="icon"
-                type="github"
-                href='https://github.com/taty2010/Original-wedding-planner/tree/tatyana-novell'
-                target='_blank'
-              />
-              <AwesomeButton
-                className="socialBttn"
-                size="icon"
-                type="secondary"
-                href='https://angry-nightingale-5ebd83.netlify.com/'
-                target='_blank'
-              >
-                <i class="fas fa-globe" />
-              </AwesomeButton>
+              <div className='bttn-wrap'>
+                <AwesomeButtonSocial
+                  className="socialBttn"
+                  size="icon"
+                  type="github"
+                  href='https://github.com/taty2010/Original-wedding-planner/tree/tatyana-novell'
+                  target='_blank'
+                />
+                <AwesomeButton
+                  className="socialBttn"
+                  size="icon"
+                  type="secondary"
+                  href='https://angry-nightingale-5ebd83.netlify.com/'
+                  target='_blank'
+                >
+                  <i class="fas fa-globe" />
+                </AwesomeButton>
+              </div>
             </div>
           </div>
         </div>

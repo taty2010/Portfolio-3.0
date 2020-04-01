@@ -26,7 +26,7 @@ h3{
 .App{
   display: flex;
     flex-flow: row wrap;
-    position: relative;
+    // position: relative;
     width: 99vw;
     height: auto;
 }
@@ -278,32 +278,33 @@ h3{
 
 .about-header{
   position: inherit;
-  top: 12vh;
+  top: 5vh;
   @media only screen and (max-width: 899px) and (min-width: 600px){
     top:5vh;
   }
-  h1 {
+  img {
     font-family: $main-font;
       position: inherit;
       font-size: 8vw;
-      left: 35vw;
+      left: 20vw;
       top: 22vh;
-      border: 1px solid white;
+      width: 60vw;
+      // border: 1px solid white;
       padding: 0 2vw;
       @media only screen and (min-width: 1500px){
         font-size: 8vw;
       }
       @media only screen and (min-width: 1200px) and (max-width: 1499px){
-        font-size: 10vw;
-        left: 30vw;
+        top: 15vh;
+        width: 50vw;
+        left: 25vw;
       }
       @media only screen and (min-width: 900px)and (max-width: 1199px){
-        top: 20vh;
-        left: 35vw;
+        top: 10vh;
       }
       @media only screen and (max-width: 899px) and (min-width: 600px){
-        top:32vh;
-        left: 40vw;
+        top:15vh;
+        left: 20vw;
       }
   }
   h3 {
@@ -343,7 +344,7 @@ h3{
 }
 
 .wave {
-  width: 100vw;
+  width: 102vw;
   height: auto;
   position: absolute;
   right: 0;
@@ -351,27 +352,23 @@ h3{
   bottom: 0;
   transition: top .4s linear;
   @media only screen and (min-width: 1500px){
-    width: 100vw;
     top: -75vh;
   }
   @media only screen and (min-width: 1200px) and (max-width: 1499px){
-    width: 100vw;
-    top: -500px;
+    top: -50vh;
   }
   @media only screen and (min-width: 900px)and (max-width: 1199px){
-    width: 100vw;
     left: -1px;
      top: -40vh;
   }
   @media only screen and (max-width: 899px) and (min-width: 600px){
-    width: 100vw;
     top: -20vh;
-    left: -5px;
+    left: -2px;
   }
   @media only screen and (max-width: 599px){
-    width: 100vw;
+    width: 102vw;
     top: 0;
-    left: 0;
+    left: -2px;
   }
 }
 
@@ -560,7 +557,7 @@ text-decoration: none;
   }
   .skills_blob{
     position: relative;
-    transition: transform 5s, opacity 10s ease-in-out;
+    transition: all 1.5s ease-in-out;
     &:hover{
       transform: scale(1.1) translate(10%, 0);
     }
@@ -851,11 +848,17 @@ text-decoration: none;
 }
 
 .proj-desc{
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   h3{
     font-family: $main-font;
     width: 25vw;
     @media only screen and (max-width: 599px){
       font-size: 5vw;
+      width: 30vw;
     }
   }
   @media only screen and (min-width: 900px)and (max-width: 1199px){

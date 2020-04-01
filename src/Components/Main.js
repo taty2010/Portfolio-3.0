@@ -3,6 +3,7 @@ import { ReactComponent as Wave } from "../Wave.svg";
 import { DefaultNav, FixedNav } from "../Components/sidebar/Nav";
 import Projects from "../Projects/Projects";
 import Skills from "./Skills";
+import logo from '../img/taty-logo.png';
 
 const Main = () => {
   const [move, setMove] = useState(0);
@@ -40,7 +41,8 @@ const Main = () => {
           <DefaultNav move={move} />
         </div>
         <div className="about-header">
-          <h1>Hello</h1>
+          {/* <h1>Hello</h1> */}
+          <img src={logo} alt='logo'></img>
         </div>
       </div>
       <h3 id='about' className="aboutText">
