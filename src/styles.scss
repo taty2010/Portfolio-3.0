@@ -58,6 +58,7 @@ h3{
   flex-flow: column;
   top: 0;
   left: 0;
+  transition: all 1.5s ease-in-out;
   @media only screen and (max-width: 599px){
     width: 100vw;
     background-image: linear-gradient(180deg, rgba(28, 4, 77, 0.8) 0%, rgba(224, 130, 160, 0.8) 100%);
