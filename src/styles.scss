@@ -3,6 +3,8 @@
 
 $main-font: 'Bungee Hairline', cursive;
 $divider: linear-gradient(to right, #f9a2d9, #4c4b6e00);
+$neumorph: -17px -17px 15px rgba(227, 172, 247, 0.14), 13px 16px 15px rgba(75, 68, 121, 0.39);
+$shadow: drop-shadow(2px 18px 8px #693d6d6b);
 
 html{
   scroll-behavior: smooth;
@@ -243,7 +245,12 @@ h3{
   .aboutText{
     font-size: 3vw;
     border-radius: 25px;
-    box-shadow: -9px -8px 12px rgba(255, 255, 255, 0.06), 6px 5px 15px rgba(120, 71, 130, 0.25);
+    box-shadow: $neumorph;
+    filter: $shadow;
+    border-left: 1px ridge #ffffff40;
+    border-top: 1px ridge #ffffff40;
+    border-bottom: 1px ridge #693d6d6b;
+    border-right: 1px ridge #693d6d29;
     color: white;
     background-color: transparent;
     margin-top: 120vh;
@@ -901,8 +908,13 @@ text-decoration: none;
   padding: 8vh 5vw;
   border-radius: 25px;
   color: white;
-  box-shadow: -3px -4px 8px 0px rgba(238, 186, 255, 0.17), 6px 7px 10px rgba(0, 0, 0, 0.12);
-    color: white;
+  box-shadow: $neumorph;
+  filter: $shadow;
+  color: white;
+  border-left: 1px ridge #ffffff40;
+  border-top: 1px ridge #ffffff40;
+  border-bottom: 1px ridge #693d6d6b;
+  border-right: 1px ridge #693d6d29;
     @media only screen and (max-width: 599px){
       flex-flow: column;
       height: 80vh;
