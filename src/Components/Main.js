@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { ReactComponent as Wave } from "../Wave.svg";
-import { DefaultNav, FixedNav } from "../Components/sidebar/Nav";
+import { DefaultNav} from "../Components/sidebar/Nav";
 import Projects from "../Projects/Projects";
 import Skills from "./Skills";
 import logo from '../img/taty-logo.png';
+import computer from '../img/drip-computer.png'
 
 const Main = () => {
   const [move, setMove] = useState(0);
@@ -51,10 +52,16 @@ const Main = () => {
         I am currently working as a Web Content Editor. Knowledgeable in
         Front-End Development and gaining experience in Back-End.
       </h3>
+      <div className='comp-icon-wrapper'>
+        <div className='comp-icon'>
+          <i className="fas fa-arrow-down"></i>
+          <img src={computer} alt='pink and purple gradient computer illustration with paint like drips'></img>
+        </div>
+      </div>
       <Skills />
       <Projects />
       <div style={{ opacity: toTop }} className="toTop">
-        <i onClick={backToTop} class="fas fa-chevron-circle-up" />
+        <i onClick={backToTop} className="fas fa-chevron-circle-up" />
       </div>
     </div>
   );
