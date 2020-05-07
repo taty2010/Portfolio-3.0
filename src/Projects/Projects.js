@@ -16,6 +16,10 @@ const Projects = () => {
   const proj3 = "https://www.dropbox.com/s/agkcr4wings3y2q/proj4Sq.png?raw=1";
   const projLink = "https://relaxed-stallman-2387d1.netlify.com"
 
+  const border = (
+    <div className='border-projects'><div></div></div>
+  )
+
   return (
     <div id="projects" className="projects">
       {/* <NavContact /> */}
@@ -27,6 +31,7 @@ const Projects = () => {
             <img src={`${proj1}`} alt="Project 1" />
             <div className="proj-desc">
               <h3>Nasa Photo of the Day</h3>
+              {border}
               <p>Click through the Nasa APOD API for<br/> their photo/video of the day</p>
               <div className='bttn-wrap'>
                 <AwesomeButtonSocial
@@ -43,7 +48,7 @@ const Projects = () => {
                   href='https://csb-bthu5.netlify.com/'
                   target="_blank"
                 >
-                  <i class="fas fa-globe" />
+                  <i className="fas fa-globe" />
                 </AwesomeButton>
               </div>
             </div>
@@ -52,6 +57,7 @@ const Projects = () => {
             <img src={`${proj2}`} alt="Project 2" />
             <div className="proj-desc">
               <h3>Resume</h3>
+              {border}
               <p>Created a resume template with HTML/CSS</p>
               <div className='bttn-wrap'>
                 <AwesomeButtonSocial
@@ -68,7 +74,7 @@ const Projects = () => {
                   href='https://taty2010.github.io/Preprocessing-I/'
                   target='_blank'
                 >
-                  <i class="fas fa-globe" />
+                  <i className="fas fa-globe" />
                 </AwesomeButton>
               </div>
             </div>
@@ -77,6 +83,7 @@ const Projects = () => {
             <img src={`${proj3}`} alt="Project 3" />
             <div className="proj-desc">
               <h3>Art Portfolio</h3>
+              {border}
               <p>Landing Page for website where artists<br/> can share their work</p>
               <div className='bttn-wrap'>
                 <AwesomeButtonSocial
@@ -93,7 +100,7 @@ const Projects = () => {
                   href='https://team-art.github.io/Splash_Page'
                   target='_blank'
                 >
-                  <i class="fas fa-globe" />
+                  <i className="fas fa-globe" />
                 </AwesomeButton>
               </div>
             </div>
@@ -102,6 +109,7 @@ const Projects = () => {
             <img src={`${proj4}`} alt="Project 1" />
             <div className="proj-desc">
               <h3>Explore Breweries</h3>
+              {border}
               <p>Page created with the Brewery APi that allows <br/>user's to search for breweries  </p>
               <div className='bttn-wrap'>
                 <AwesomeButtonSocial
@@ -118,7 +126,7 @@ const Projects = () => {
                   href='https://csb-0myoe.netlify.com/'
                   target='_blank'
                 >
-                  <i class="fas fa-globe" />
+                  <i className="fas fa-globe" />
                 </AwesomeButton>
               </div>
             </div>
@@ -127,6 +135,7 @@ const Projects = () => {
             <img src={`${proj5}`} alt="Project 2" />
             <div className="proj-desc">
               <h3>Cheftopia</h3>
+              {border}
               <p>Website where Chefs can post and share their recipe's</p>
               <div className='bttn-wrap'>
                 <AwesomeButtonSocial
@@ -143,7 +152,7 @@ const Projects = () => {
                   href='https://fervent-bose-6a1f1a.netlify.com/'
                   target='_blank'
                 >
-                  <i class="fas fa-globe" />
+                  <i className="fas fa-globe" />
                 </AwesomeButton>
               </div>
             </div>
@@ -152,6 +161,7 @@ const Projects = () => {
             <img src={`${proj6}`} alt="Project 3" />
             <div className="proj-desc">
               <h3>Wedding Portfolio</h3>
+              {border}
               <p>Portfolio website created for wedding planner's to post their <br/>work and gain new clients.</p>
               <div className='bttn-wrap'>
                 <AwesomeButtonSocial
@@ -168,7 +178,7 @@ const Projects = () => {
                   href='https://angry-nightingale-5ebd83.netlify.com/'
                   target='_blank'
                 >
-                  <i class="fas fa-globe" />
+                  <i className="fas fa-globe" />
                 </AwesomeButton>
               </div>
             </div>

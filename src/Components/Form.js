@@ -1,6 +1,6 @@
 import React from "react";
 import { NavContact } from "../Components/sidebar/Nav";
-import { ReactComponent as Wave } from "../Wave.svg";
+// import { ReactComponent as Wave } from "../Wave.svg";
 
 const Form = () => {
   return (

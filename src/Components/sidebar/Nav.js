@@ -1,14 +1,14 @@
 import React from "react";
-import styled from "styled-components";
+// import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const DefaultNav = props => {
-  const Nav = styled.div`
-    top: ${props.move >= 450 ? "40vh" : ""};
-  `;
+  // const Nav = styled.div`
+  //   top: ${props.move >= 450 ? "40vh" : ""};
+  // `;
 
   return (
-    <nav className={`nav ${props.move >= 400 ? "fixed" : ""}`}>
+    <nav className={`nav ${props.move >= 700 ? "fixed" : ""}`}>
       <ul>
         <a href="#about">
           <li>About</li>

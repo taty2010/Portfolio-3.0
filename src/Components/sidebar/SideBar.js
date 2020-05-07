@@ -14,9 +14,9 @@ const SideBar = () => {
       >
         <p>
           {!toggle ? (
-            <i class="fas fa-angle-double-right" />
+            <i className="fas fa-angle-double-right" />
           ) : (
-            <i class="fas fa-angle-double-left" />
+            <i className="fas fa-angle-double-left" />
           )}
         </p>
       </AwesomeButton>
@@ -37,12 +37,23 @@ const SideBar = () => {
           <i className="fab fa-linkedin" />
           </a>
         </li>
-        {/* <li>
-          <a href='www.linkedin.com/in/tatyana-novell-b0168bb1'>
-            <i className="fab fa-twitter-square" />
-          </a>
-        </li> */}
       </ul>
+      <nav className='side-nav'>
+      <ul>
+        <a href="#about">
+          <li>About</li>
+        </a>
+        <a href="#skills">
+          <li>Skills</li>
+        </a>
+        <a href="#projects">
+          <li>Projects</li>
+        </a>
+        {/* <Link to="/contact">
+          <li>Contact</li>
+        </Link> */}
+      </ul>
+    </nav>
     </div>
   );
 };
