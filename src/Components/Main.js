@@ -46,6 +46,8 @@ const Main = () => {
         </div>
       </div>
       <h3 id='about' className="aboutText">
+        <span className='about-title'>About Me</span><br/>
+        <div className='border'><div></div></div>
         I am currently working as a Web Content Editor. Knowledgeable in
         Front-End Development and gaining experience in Back-End.
       </h3>
