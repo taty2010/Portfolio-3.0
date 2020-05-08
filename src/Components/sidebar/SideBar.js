@@ -6,20 +6,18 @@ const SideBar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <div className={`sidebar ${!toggle ? "closed" : ""}`}>
-      <AwesomeButton
+      <button
       size='icon'
         type="primary"
         className="sidebar_bttn"
-        onPress={e => setToggle(!toggle)}
+        onClick={e => setToggle(!toggle)}
       >
-        <p>
           {!toggle ? (
             <i className="fas fa-angle-double-right" />
           ) : (
-            <i className="fas fa-angle-double-left" />
+            <i className="fas fa-times exit"></i>
           )}
-        </p>
-      </AwesomeButton>
+      </button>
       <div className="profileImg" />
       <h3>Tatyana Novell</h3>
       <h3>Front-End Developer</h3>
