@@ -4,7 +4,7 @@
 $main-font: 'Bungee Hairline', cursive;
 $divider: linear-gradient(to right, #f9a2d9, #4c4b6e00);
 $neumorph: -17px -17px 15px rgba(227, 172, 247, 0.14), 13px 16px 15px rgba(75, 68, 121, 0.39);
-$shadow: drop-shadow(12px 7px 2px rgba(0,0,0,0.3));
+$shadow: drop-shadow(12px 7px 5px rgba(0,0,0,0.3));
 
 html{
   scroll-behavior: smooth;
@@ -700,7 +700,8 @@ text-decoration: none;
   .skills_blob{
     // position: relative;
     transition: all 1.5s ease-in-out;
-    height: 20vh;
+    width: 150px;
+    height: 150px;
     &:hover{
       transform: scale(1.1) translate(10%, 0);
     }
@@ -932,7 +933,7 @@ text-decoration: none;
 .boxes2{
   width: 65vw;
   height: 50vh;
-  margin: 15vh 2vw;
+  margin: 25vh 2vw;
   text-align: center;
   z-index: -2;
   display: flex;
@@ -941,7 +942,7 @@ text-decoration: none;
   align-items: center;
   background-color: transparent;
   padding: 8vh 5vw;
-  border-radius: 25px;
+  border-radius: 45px;
   color: white;
   box-shadow: $neumorph;
   color: white;
@@ -949,23 +950,39 @@ text-decoration: none;
   border-top: 1px ridge #ffffff40;
   border-bottom: 1px ridge #693d6d6b;
   border-right: 1px ridge #693d6d29;
+  transition: transform 0.4s ease-in;
+  &:hover{
+    transform: translate(5px, 5px);
+  }
+  &:hover img {
+      transform: translate(-5px, -5px);
+      filter: drop-shadow(33px 40px 14px rgba(0, 0, 0, 0.3));
+  }
+  &:hover .proj-desc {
+    transform: translate(-5px, -5px);
+    filter: $shadow;
+  }
     @media only screen and (max-width: 599px){
       flex-flow: column;
-      height: 80vh;
+      height: auto;
       width: 75vw;
       padding: 5vh 0;
+      margin: 25vh 2vw;
     }
     @media only screen and (max-width: 899px) and (min-width: 600px){
       flex-flow: column;
-      height: 68vh;
+      height: auto;
     }
 
     img{
       width: 45%;
       border-radius: 25px;
-      filter: drop-shadow(11px 6px 7px rgba(0, 0, 0, 0.4) );
+      transition: transform 0.4s ease-in, filter 0.4s ease-in;
+      filter: drop-shadow(12px 14px 6px rgba(0, 0, 0, 0.5));
       @media only screen and (max-width: 599px){
         width:75%;
+        position: relative;
+        bottom: 15vh;
       }
       @media only screen and (max-width: 899px) and (min-width: 600px){
         width: 60%;
@@ -991,7 +1008,8 @@ text-decoration: none;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  filter: $shadow;
+  filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
+  transition: transform 0.4s ease-in, filter 0.4s ease-in;
   h3{
     font-family: $main-font;
     width: 25vw;
