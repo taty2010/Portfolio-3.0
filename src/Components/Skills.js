@@ -56,12 +56,14 @@ const Skills = () => {
       <div className="skills_header">
         <h2>Skills</h2>
       </div>
-      <Img className="skills_blob css" src={css} alt="css" />
-      <Img className="skills_blob html" src={html} alt="html" />
-      <ImgMid className="skills_blob js" src={JS} alt="javascript" />
-      <ImgMid className="skills_blob less" src={LESS} alt="Less" />
-      <ImgBttm className="skills_blob ps" src={Ps} alt="Photoshop" />
-      <ImgBttm className="skills_blob react" src={ReactJs} alt="React JS" />
+      <div className='blobWrapper'>
+        <Img className="skills_blob css" src={css} alt="css" />
+        <Img className="skills_blob html" src={html} alt="html" />
+        <ImgMid className="skills_blob js" src={JS} alt="javascript" />
+        <ImgMid className="skills_blob less" src={LESS} alt="Less" />
+        <ImgBttm className="skills_blob ps" src={Ps} alt="Photoshop" />
+        <ImgBttm className="skills_blob react" src={ReactJs} alt="React JS" />
+      </div>
     </div>
   );
 };

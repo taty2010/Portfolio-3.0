@@ -4,7 +4,7 @@
 $main-font: 'Bungee Hairline', cursive;
 $divider: linear-gradient(to right, #f9a2d9, #4c4b6e00);
 $neumorph: -17px -17px 15px rgba(227, 172, 247, 0.14), 13px 16px 15px rgba(75, 68, 121, 0.39);
-$shadow: drop-shadow(2px 18px 8px #693d6d6b);
+$shadow: drop-shadow(12px 7px 2px rgba(0,0,0,0.3));
 
 html{
   scroll-behavior: smooth;
@@ -16,6 +16,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 100%;
+  // background-position-y: -15vh;
   @media only screen and (max-width: 599px){
     background-position-y: -15vh;
   }
@@ -36,7 +37,6 @@ h3{
 
 .sidebar_bttn[type="primary"]{
   font-size: 0.5vw;
-    // width: 4vh;
     border: none;
     padding: 0 0 1vh 0;
     border-radius: 25px;
@@ -44,7 +44,7 @@ h3{
     i {
     color: rgb(192, 252, 168);
     cursor: pointer;
-    font-size: 2vw;
+    font-size: 1vw;
     // border-radius: 25px;
     // padding: 1vw;
     // border: none;
@@ -265,7 +265,6 @@ h3{
     font-size: 3vw;
     border-radius: 25px;
     box-shadow: $neumorph;
-    filter: $shadow;
     border-left: 1px ridge #ffffff40;
     border-top: 1px ridge #ffffff40;
     border-bottom: 1px ridge #693d6d6b;
@@ -284,7 +283,7 @@ h3{
       line-height: 4vh;
     }
     @media only screen and (min-width:1200px){
-      margin-top: 150vh;
+      margin-top: 180vh;
       padding: 10vh 2vw;
       font-size: 2.5vw;
       width: 50vw;
@@ -327,26 +326,34 @@ h3{
       width: 100vw;
       // left: -1vw;
     }
+    .navWrapper{
+      display: flex;
+      justify-content: center;
+      width: 102vw;
+    }
 }
 
 .about-header{
   position: inherit;
   top: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   @media only screen and (max-width: 899px) and (min-width: 600px){
     top:5vh;
   }
   img {
-    font-family: $main-font;
-      position: inherit;
+      // position: inherit;
       font-size: 8vw;
       left: 20vw;
-      top: 15vh;
+      margin-top: 18vh;
       width: 60vw;
       z-index: -4;
       // border: 1px solid white;
       padding: 0 2vw;
       @media only screen and (min-width: 1500px){
         font-size: 8vw;
+        width: 40vw;
       }
       @media only screen and (min-width: 1200px) and (max-width: 1499px){
         top: 15vh;
@@ -407,7 +414,8 @@ h3{
   transition: top .4s linear;
   z-index: -5;
   @media only screen and (min-width: 1500px){
-    top: -75vh;
+    top: -105vh;
+    left: 1px;
   }
   @media only screen and (min-width: 1200px) and (max-width: 1499px){
     top: -70vh;
@@ -473,7 +481,7 @@ text-decoration: none;
 .nav{
     display: none;
     width: 50vw;
-    position: relative;
+    // position: relative;
     top: -6vh;
     border-radius: 25px;
     padding: 0 2vw;
@@ -486,7 +494,7 @@ text-decoration: none;
   }
 
   @media only screen and (min-width: 900px)and (max-width: 1199px){
-     top: 5vh;
+     margin-top: 5vh;
      left: 25vw;
      display: block;
   }
@@ -670,9 +678,19 @@ text-decoration: none;
 }
 
 .skills{
-  margin: 50vh 0 15vh 25vw;
+  margin: 50vh 0 15vh 5vw;
   height: auto;
-  padding-top:15vh;
+  padding-top: 15vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  .blobWrapper{
+    display: flex;
+    flex-flow: row wrap;
+    width: 60vw;
+    justify-content: center;
+  }
   @media only screen and (min-width:1200px){
     height: 120vh;
   }
@@ -680,8 +698,9 @@ text-decoration: none;
     height: 170vh;
   }
   .skills_blob{
-    position: relative;
+    // position: relative;
     transition: all 1.5s ease-in-out;
+    height: 20vh;
     &:hover{
       transform: scale(1.1) translate(10%, 0);
     }
@@ -689,7 +708,7 @@ text-decoration: none;
   .skills_header{
     padding-bottom: 10vh;
     h2 {
-      margin-left: 20vw;
+      // margin-left: 20vw;
       font-size: 4vw;
       font-family: $main-font;
       color: white;
@@ -700,7 +719,6 @@ text-decoration: none;
 .css{
   left: 0;
   top: 0;
-  width: 25vw;
   opacity: 0;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
     width: 20vw
@@ -721,7 +739,6 @@ text-decoration: none;
 .html{
   left: 0;
   bottom: 30px;
-  width: 25vw;
   opacity: 0;
   transition: opacity 5s;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
@@ -737,7 +754,6 @@ text-decoration: none;
 .js{
   top: 28vh;
   right: 20vw;
-  width: 25vw;
   opacity: 0;
   transition: opacity 5s;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
@@ -752,7 +768,6 @@ text-decoration: none;
 }
 .less{
   left: 5vw;
-  width: 28vw;
   opacity: 0;
   transition: opacity 5s;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
@@ -769,8 +784,6 @@ text-decoration: none;
   bottom: 0;
   top: 25vh;
   right: 8vw;
-  /* left: 15vw; */
-  width: 25vw;
   opacity: 0;
   transition: opacity 5s;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
@@ -790,7 +803,6 @@ text-decoration: none;
 }
 .react{
   right: 30px;
-  width: 28vw;
   opacity: 0;
   transition: opacity 5s;
   @media only screen and (min-width: 1200px) and (max-width: 1311px){
@@ -932,7 +944,6 @@ text-decoration: none;
   border-radius: 25px;
   color: white;
   box-shadow: $neumorph;
-  filter: $shadow;
   color: white;
   border-left: 1px ridge #ffffff40;
   border-top: 1px ridge #ffffff40;
@@ -951,8 +962,8 @@ text-decoration: none;
 
     img{
       width: 45%;
-      box-shadow: 7px 4px 9px #80808096;
       border-radius: 25px;
+      filter: drop-shadow(11px 6px 7px rgba(0, 0, 0, 0.4) );
       @media only screen and (max-width: 599px){
         width:75%;
       }
@@ -962,9 +973,6 @@ text-decoration: none;
       @media only screen and (min-width: 900px)and (max-width: 1199px){
         width: 50%;
       }
-      // @media only screen and (min-width: 1200px){
-      //   width: 80%;
-      // }
     }
 }
 
@@ -983,6 +991,7 @@ text-decoration: none;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  filter: $shadow;
   h3{
     font-family: $main-font;
     width: 25vw;

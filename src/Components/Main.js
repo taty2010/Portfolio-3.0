@@ -38,7 +38,7 @@ const Main = () => {
         className={`wave ${move > 600 ? "fixed" : ""}`}
       />
       <div className="header">
-        <div>
+        <div className="navWrapper">
           <DefaultNav move={move} />
         </div>
         <div className="about-header">
