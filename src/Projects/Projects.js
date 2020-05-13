@@ -28,6 +28,7 @@ const Projects = () => {
         <h1>Projects</h1>
         <div className="projectBoxes">
           <div className="boxes2">
+            <div className="boxes-background"></div>
             <img src={`${proj1}`} alt="Project 1" />
             <div className="proj-desc">
               <h3>Nasa Photo of the Day</h3>

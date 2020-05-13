@@ -36,7 +36,7 @@ h3{
 }
 
 .sidebar_bttn[type="primary"]{
-  font-size: 0.5vw;
+    font-size: 1.8vw;
     border: none;
     padding: 0 0 1vh 0;
     border-radius: 25px;
@@ -946,10 +946,7 @@ text-decoration: none;
   color: white;
   box-shadow: $neumorph;
   color: white;
-  border-left: 1px ridge #ffffff40;
-  border-top: 1px ridge #ffffff40;
-  border-bottom: 1px ridge #693d6d6b;
-  border-right: 1px ridge #693d6d29;
+  border: 5px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.4s ease-in;
   &:hover{
     transform: translate(5px, 5px);
@@ -964,7 +961,7 @@ text-decoration: none;
   }
     @media only screen and (max-width: 599px){
       flex-flow: column;
-      height: auto;
+      height: 100vh;
       width: 75vw;
       padding: 5vh 0;
       margin: 25vh 2vw;
@@ -975,23 +972,44 @@ text-decoration: none;
     }
 
     img{
-      width: 45%;
-      border-radius: 25px;
+      // width: 45%;
+      width: 300px;
+      height: 300px;
+      border: 5px solid #ffffff5e;
+      border-radius: 200px;
       transition: transform 0.4s ease-in, filter 0.4s ease-in;
       filter: drop-shadow(12px 14px 6px rgba(0, 0, 0, 0.5));
-      @media only screen and (max-width: 599px){
-        width:75%;
-        position: relative;
-        bottom: 15vh;
-      }
-      @media only screen and (max-width: 899px) and (min-width: 600px){
-        width: 60%;
-      }
-      @media only screen and (min-width: 900px)and (max-width: 1199px){
-        width: 50%;
-      }
+      // @media only screen and (max-width: 599px){
+      //   width:75%;
+      //   // position: relative;
+      //   // bottom: 15vh;
+      // }
+      // @media only screen and (max-width: 899px) and (min-width: 600px){
+      //   width: 60%;
+      // }
+      // @media only screen and (min-width: 900px)and (max-width: 1199px){
+      //   width: 50%;
+      // }
     }
 }
+
+// .boxes-background{
+//     filter: blur(5px);
+//     /* background: green; */
+//     // background: linear-gradient(-45deg, #9871c238, #ffffff24);
+//     width: 74.2vw;
+//     height: 64vh;
+//     border-radius: 45px;
+//     position: absolute;
+//     box-shadow: -17px -17px 15px rgba(227, 172, 247, 0.14), 13px 16px 15px rgba(75, 68, 121, 0.22);
+//     @media only screen and (max-width: 899px) and (min-width: 600px){
+//       height: 113vh;
+//     }
+//     @media only screen and (max-width: 599px){
+//       filter: blur(3px);
+//       height: 86vh;
+//     }
+// }
 
 .border-projects{
   height: 0.9vh;
