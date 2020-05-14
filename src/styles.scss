@@ -4,7 +4,7 @@
 $main-font: 'Bungee Hairline', cursive;
 $divider: linear-gradient(to right, #f9a2d9, #4c4b6e00);
 $neumorph: -17px -17px 15px rgba(227, 172, 247, 0.14), 13px 16px 15px rgba(75, 68, 121, 0.39);
-$shadow: drop-shadow(12px 7px 5px rgba(0,0,0,0.3));
+$shadow: drop-shadow(22px 12px 3px rgba(0,0,0,0.3));
 
 html{
   scroll-behavior: smooth;
@@ -44,7 +44,7 @@ h3{
     i {
     color: rgb(192, 252, 168);
     cursor: pointer;
-    font-size: 1vw;
+    font-size: 1.5vw;
     // border-radius: 25px;
     // padding: 1vw;
     // border: none;
@@ -135,9 +135,11 @@ h3{
   height: 100vh;
   display:flex;
   .sidebar_bttn{
+    display: flex;
+    justify-content: center;
     font-size: 1vw;
     border-radius: 25px;
-    padding: 1vw;
+    padding: 2vh 2vw;
     border: none;
     background-color: transparent;
     box-shadow: -5px -2px 11px rgba(255, 255, 255, 0.12), 3px 6px 10px rgba(5, 7, 12, 0.69);
@@ -705,6 +707,10 @@ text-decoration: none;
     &:hover{
       transform: scale(1.1) translate(10%, 0);
     }
+      @media only screen and (max-width: 599px){
+        width: 100px;
+        height: 100px;
+    }
   }
   .skills_header{
     padding-bottom: 10vh;
@@ -928,10 +934,16 @@ text-decoration: none;
     @media only screen and (max-width: 899px) and (min-width: 600px){
       margin-top: 10vh;
     }
+    @media only screen and (min-width: 900px)and (max-width: 1199px){
+      margin-top: 10vh;
+      margin-bottom: 35vh;
+      display: flex;
+      flex-flow: row wrap;
+    }
 }
 
 .boxes2{
-  width: 65vw;
+  width: 60vw;
   height: 50vh;
   margin: 25vh 2vw;
   text-align: center;
@@ -941,8 +953,8 @@ text-decoration: none;
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  padding: 8vh 5vw;
-  border-radius: 45px;
+  padding: 8vh 2.5vw;
+  border-radius: 65px;
   color: white;
   box-shadow: $neumorph;
   color: white;
@@ -950,6 +962,8 @@ text-decoration: none;
   transition: transform 0.4s ease-in;
   &:hover{
     transform: translate(5px, 5px);
+    border: 5px solid rgba(255, 255, 255, 0.02);
+    box-shadow: -17px -17px 15px rgba(227, 172, 247, 0.08), 13px 16px 15px rgba(75, 68, 121, 0.1);
   }
   &:hover img {
       transform: translate(-5px, -5px);
@@ -961,7 +975,7 @@ text-decoration: none;
   }
     @media only screen and (max-width: 599px){
       flex-flow: column;
-      height: 100vh;
+      height: 80vh;
       width: 75vw;
       padding: 5vh 0;
       margin: 25vh 2vw;
@@ -970,6 +984,12 @@ text-decoration: none;
       flex-flow: column;
       height: auto;
     }
+    @media only screen and (min-width: 900px)and (max-width: 1199px){
+        flex-flow: row wrap;
+        width: 32vw;
+        height: 95vh;
+        margin: 12vh 2vw;
+      }
 
     img{
       // width: 45%;
@@ -979,11 +999,12 @@ text-decoration: none;
       border-radius: 200px;
       transition: transform 0.4s ease-in, filter 0.4s ease-in;
       filter: drop-shadow(12px 14px 6px rgba(0, 0, 0, 0.5));
-      // @media only screen and (max-width: 599px){
-      //   width:75%;
-      //   // position: relative;
-      //   // bottom: 15vh;
-      // }
+      @media only screen and (max-width: 599px){
+        width:200px;
+        height: 200px;
+        // position: relative;
+        // bottom: 15vh;
+      }
       // @media only screen and (max-width: 899px) and (min-width: 600px){
       //   width: 60%;
       // }
@@ -1028,6 +1049,15 @@ text-decoration: none;
   align-items: center;
   filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
   transition: transform 0.4s ease-in, filter 0.4s ease-in;
+
+  @media only screen and (min-width: 900px)and (max-width: 1199px){
+    margin: 0;
+  }
+
+  @media only screen and (min-width: 1200px){
+   margin-left: 5vw;
+  }
+
   h3{
     font-family: $main-font;
     width: 25vw;
@@ -1035,13 +1065,10 @@ text-decoration: none;
       font-size: 5vw;
       width: 30vw;
     }
-  }
-  @media only screen and (min-width: 900px)and (max-width: 1199px){
-    margin-left: 6vw;
-  }
-  @media only screen and (min-width: 1200px){
-   margin-left: 5vw;
-  }
+    @media only screen and (min-width: 900px)and (max-width: 1199px){
+      margin: 2vw;
+    }
+  } 
 }
 
 iframe{
