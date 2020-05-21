@@ -25,6 +25,9 @@ const SideBar = () => {
   @media only screen and (min-width: 600px){
     opacity: ${move > 700 ? "1" : "0"}
   }
+  @media only screen and (max-width: 599px){
+    opacity: ${move > 300 ? "1" : "0"}
+  }
 `;
 
 
@@ -32,7 +35,7 @@ const SideBar = () => {
 
   if (bgColor === background.blue){
     document.body.style.backgroundColor = "black";
-  } else {document.body.style.backgroundColor = "#CCDEFA";}
+  } else {document.body.style.backgroundColor = "white";}
   
 
   return (

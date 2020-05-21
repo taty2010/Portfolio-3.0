@@ -185,26 +185,9 @@ h3{
     padding-top: 5vh;
     padding-left: 0vw;
     width: 8vw;
-    // background-image: none;
-    // border: none;
-    // ul{
-    //   display:none;
-    // }
-    // .profileImg{
-    //   display: none;
-    // }
   }
   @media only screen and (max-width: 1199px) and (min-width: 900px){
     padding-top: 2vh;
-    // padding-left: 3.5vw;
-    // background-image: none;
-    // border: none;
-    // ul{
-    //   display:none;
-    // }
-    // .profileImg{
-    //   display: none;
-    // }
   }
   
   li{
@@ -249,7 +232,8 @@ h3{
   background-image: url('https://www.dropbox.com/s/95r5fjf08exe52g/profile-gif.gif?raw=1');
   border-radius: 100px;
   @media only screen and (max-width: 599px){
-    display: none;
+    width: 150px;
+    height: 150px;
   }
   @media only screen and (max-width: 899px) and (min-width: 600px){
     width: 130px;
@@ -266,9 +250,15 @@ h3{
   font-family: $main-font;
   h1{
     font-size: 5vw;
+    @media only screen and (max-width: 599px){
+      font-size: 8vw;
+    }
   }
   h2{
     font-size: 3vw;
+    @media only screen and (max-width: 599px){
+      font-size: 5vw;
+    }
   }
 }
 
@@ -326,7 +316,7 @@ h3{
     font-family: $main-font;
     line-height: 7vh;
     @media only screen and (max-width: 599px){
-      margin-top: 60vh;
+      margin-top: 70vh;
       padding: 10vh 2.5vw;
       line-height: 4vh;
     }
@@ -404,32 +394,7 @@ h3{
   }
   @media only screen and (max-width: 599px){
     top: 32vh;
-  }
-  img {
-      // position: inherit;
-      font-size: 8vw;
-      left: 20vw;
-      margin-top: 18vh;
-      width: 60vw;
-      z-index: -4;
-      // border: 1px solid white;
-      padding: 0 2vw;
-      @media only screen and (min-width: 1500px){
-        font-size: 8vw;
-        width: 40vw;
-      }
-      @media only screen and (min-width: 1200px) and (max-width: 1499px){
-        top: 15vh;
-        width: 45vw;
-        left: 25vw;
-      }
-      @media only screen and (min-width: 900px)and (max-width: 1199px){
-        top: 10vh;
-      }
-      @media only screen and (max-width: 899px) and (min-width: 600px){
-        top:15vh;
-        left: 20vw;
-      }
+    flex-flow:column;
   }
   h3 {
     font-family: $main-font;
@@ -773,6 +738,9 @@ text-decoration: none;
       font-size: 4vw;
       font-family: $main-font;
       color: white;
+      @media only screen and (max-width: 599px){
+        font-size: 8vw;
+    }
     }
   }
 }
@@ -889,7 +857,7 @@ text-decoration: none;
     padding-top: 20vh;
     // height: 2500px;
     @media only screen and (max-width: 599px){
-      margin-top: 35vh;
+      margin-top: 5vh;
     }
     @media only screen and (min-width: 900px)and (max-width: 1199px){
       margin-top: -10vh;
@@ -901,7 +869,7 @@ text-decoration: none;
       margin-top: 50vh;
     }
   h1 {
-    font-size: 4.5vw;
+    font-size: 8vw;
     font-family: $main-font;
     color: white;
   }
@@ -987,6 +955,7 @@ text-decoration: none;
     margin-bottom: 35vh;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     @media only screen and (max-width: 899px) and (min-width: 600px){
       margin-top: 10vh;
       flex-flow: column;
@@ -1034,9 +1003,9 @@ text-decoration: none;
     @media only screen and (max-width: 599px){
       flex-flow: column;
       height: 90vh;
-      width: 75vw;
+      width: 80vw;
       padding: 5vh 0;
-      margin: 25vh 2vw;
+      margin: 15vh 2vw;
     }
     @media only screen and (max-width: 899px) and (min-width: 600px){
       flex-flow: column;
