@@ -7,8 +7,9 @@ import {
 import styles from "../webBttn.scss";
 import proj4 from '../img/Breweriessq.png';
 import proj5 from '../img/cheftopia.png';
-import proj1 from '../img/nasasq.png'
-import proj6 from '../img/wedding.png'
+import proj1 from '../img/nasasq.png';
+import proj6 from '../img/wedding.png';
+import VanillaTilt from 'vanilla-tilt';
 
 const Projects = () => {
   // const proj1 = "https://www.dropbox.com/s/6z2u3f1ddokcq6e/proj5Sq.png?raw=1";
@@ -20,6 +21,13 @@ const Projects = () => {
     <div className='border-projects'><div></div></div>
   )
 
+  VanillaTilt.init(document.querySelectorAll(".boxes2"), {
+    max:20,
+    speed: 300,
+    reverse: true
+  })
+
+
   return (
     <div id="projects" className="projects">
       {/* <NavContact /> */}
@@ -27,7 +35,7 @@ const Projects = () => {
       <div className="wrapper_projects">
         <h1>Projects</h1>
         <div className="projectBoxes">
-          <div className="boxes2">
+          <div data-tilt data-tilt-axis="x" className="boxes2">
             <img src={`${proj1}`} alt="Project 1" />
             <div className="proj-desc">
               <h3>Nasa Photo of the Day</h3>
@@ -53,7 +61,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="boxes2">
+          <div data-tilt data-tilt-axis="x" className="boxes2">
             <img src={`${proj2}`} alt="Project 2" />
             <div className="proj-desc">
               <h3>Resume</h3>
@@ -79,7 +87,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="boxes2">
+          <div data-tilt data-tilt-axis="x" className="boxes2">
             <img src={`${proj3}`} alt="Project 3" />
             <div className="proj-desc">
               <h3>Art Portfolio</h3>
@@ -105,7 +113,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="boxes2">
+          <div data-tilt data-tilt-axis="x" className="boxes2">
             <img src={`${proj4}`} alt="Project 1" />
             <div className="proj-desc">
               <h3>Explore Breweries</h3>
@@ -131,7 +139,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="boxes2">
+          <div data-tilt data-tilt-axis="x" className="boxes2">
             <img src={`${proj5}`} alt="Project 2" />
             <div className="proj-desc">
               <h3>Cheftopia</h3>
@@ -157,7 +165,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="boxes2">
+          <div data-tilt data-tilt-axis="x" className="boxes2">
             <img src={`${proj6}`} alt="Project 3" />
             <div className="proj-desc">
               <h3>Wedding Portfolio</h3>
