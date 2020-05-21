@@ -611,24 +611,17 @@ text-decoration: none;
 }
 
 .nav.fixed{
-  background-color: rgb(132, 119, 214);
+  background: linear-gradient(100deg, #fe53b2, #7367b7);
   border-radius: 25px;
   position: fixed;
   top: 1vh;
-  left:25vw;
+  left:22vw;
   margin: 0;
   z-index: 10;
   width: auto;
   text-align: center;
   box-shadow: -3px -4px 7px rgba(255, 255, 255, 0.27), 15px 15px 15px rgba(6, 6, 12, 0.33);
   transition: all 1s ease-in-out;
-  @media only screen and (min-width: 700px){
-    background-color: #af7bd6;
-    top: 2px;
-    left: 25vw;
-    width: auto;
-    box-shadow: -3px -4px 7px rgba(255, 255, 255, 0.27), 15px 15px 15px rgba(6, 6, 12, 0.33)
-  }
   ul{
     margin: 0;
     
@@ -653,7 +646,7 @@ text-decoration: none;
       left:25vw;
     }
     @media only screen and (min-width: 1200px){
-      left:25vw;
+      left:22vw;
     }
   }
 }
@@ -992,8 +985,11 @@ text-decoration: none;
 .projectBoxes{
     margin-top: 10vh;
     margin-bottom: 35vh;
+    display: flex;
+    flex-flow: row wrap;
     @media only screen and (max-width: 899px) and (min-width: 600px){
       margin-top: 10vh;
+      flex-flow: column;
     }
     @media only screen and (min-width: 900px)and (max-width: 1199px){
       margin-top: 10vh;
@@ -1004,13 +1000,13 @@ text-decoration: none;
 }
 
 .boxes2{
-  width: 60vw;
-  height: 50vh;
-  margin: 25vh 2vw;
+  width: 32vw;
+  height: 95vh;
+  margin: 20vh 2vw;
   text-align: center;
   z-index: -2;
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   background-color: transparent;
@@ -1018,7 +1014,6 @@ text-decoration: none;
   border-radius: 65px;
   color: white;
   box-shadow: -6px -6px 30px rgba(227, 172, 247, 0.14), 13px 16px 50px rgba(0, 0, 0, 0.38);;
-  // border: 5px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.4s ease-in;
   transform-style: preserve-3d;
   transform: perspective(1000px);
@@ -1038,7 +1033,7 @@ text-decoration: none;
   }
     @media only screen and (max-width: 599px){
       flex-flow: column;
-      height: 80vh;
+      height: 90vh;
       width: 75vw;
       padding: 5vh 0;
       margin: 25vh 2vw;
@@ -1046,9 +1041,10 @@ text-decoration: none;
     @media only screen and (max-width: 899px) and (min-width: 600px){
       flex-flow: column;
       height: auto;
+      width: 45vw;
     }
     @media only screen and (min-width: 900px)and (max-width: 1199px){
-        flex-flow: row wrap;
+        flex-flow: column;
         width: 32vw;
         height: 95vh;
         margin: 12vh 2vw;
@@ -1117,13 +1113,11 @@ text-decoration: none;
     margin: 0;
   }
 
-  @media only screen and (min-width: 1200px){
-   margin-left: 5vw;
-  }
-
   h3{
     font-family: $main-font;
     width: 25vw;
+    font-size: 2vw;
+    line-height: 5.5vh;
     @media only screen and (max-width: 599px){
       font-size: 5vw;
       width: 30vw;

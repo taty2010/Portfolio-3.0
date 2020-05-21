@@ -10,9 +10,22 @@ export const background = {
 }
 
 const SideBar = () => {
+
   const [toggle, setToggle] = useState(false);
   const [bkgChange, setBkgChange] = useState();
   const [bgColor, setbgColor] = useState(background.purple)
+
+  const [move, setMove] = useState(0);
+  document.addEventListener("scroll", () => {
+    setMove(window.scrollY);
+  });
+
+  const SideBarClsd = styled.div`
+  opacity: 1;
+  @media only screen and (min-width: 600px){
+    opacity: ${move > 700 ? "1" : "0"}
+  }
+`;
 
 
   document.body.style.backgroundImage = `url(${bgColor})`;
@@ -23,7 +36,7 @@ const SideBar = () => {
   
 
   return (
-    <div className={`sidebar ${!toggle ? "closed" : ""}`}>
+    <SideBarClsd className={`sidebar ${!toggle ? "closed" : ""}`}>
       <button
       size='icon'
         type="primary"
@@ -72,7 +85,7 @@ const SideBar = () => {
         </Link> */}
       </ul>
     </nav>
-    </div>
+    </SideBarClsd>
   );
 };
 
