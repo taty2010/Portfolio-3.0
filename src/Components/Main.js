@@ -42,8 +42,11 @@ const Main = () => {
           <DefaultNav move={move} />
         </div>
         <div className="about-header">
-          {/* <h1>Hello</h1> */}
-          <img src={logo} alt='logo'></img>
+        <div className="headerImg" />
+          <div className="info">
+            <h1>Tatyana Novell</h1>
+            <h2>Front-End Developer</h2>
+          </div>
         </div>
       </div>
       <h3 id='about' className="aboutText">

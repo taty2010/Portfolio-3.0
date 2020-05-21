@@ -1,9 +1,27 @@
 import React, { useState } from "react";
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
+import styled from 'styled-components'
+import purpleDrip from '../../img/star-drip.png'
+
+export const background = {
+  blue: 'https://www.dropbox.com/s/nvm4oy3y07a7abw/wave-dark.png?raw=1',
+  purple: `${purpleDrip}`
+}
 
 const SideBar = () => {
   const [toggle, setToggle] = useState(false);
+  const [bkgChange, setBkgChange] = useState();
+  const [bgColor, setbgColor] = useState(background.purple)
+
+
+  document.body.style.backgroundImage = `url(${bgColor})`;
+
+  if (bgColor === background.blue){
+    document.body.style.backgroundColor = "black";
+  } else {document.body.style.backgroundColor = "#CCDEFA";}
+  
+
   return (
     <div className={`sidebar ${!toggle ? "closed" : ""}`}>
       <button
@@ -18,6 +36,8 @@ const SideBar = () => {
             <i className="fas fa-times exit"></i>
           )}
       </button>
+      {/* <button onClick={() => setbgColor(background.blue)}>blue</button>
+      <button onClick={() => setbgColor(background.purple)}>purple</button> */}
       <div className="profileImg" />
       <h3>Tatyana Novell</h3>
       <h3>Front-End Developer</h3>
