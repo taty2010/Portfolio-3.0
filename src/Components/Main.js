@@ -3,8 +3,9 @@ import { ReactComponent as Wave } from "../Wave.svg";
 import { DefaultNav} from "../Components/sidebar/Nav";
 import Projects from "../Projects/Projects";
 import Skills from "./Skills";
-import logo from '../img/taty-logo.png';
 import computer from '../img/drip-computer.png'
+import BackdropFilter from "react-backdrop-filter";
+import {ReactComponent as CutOut} from '../cutOut.svg';
 
 const Main = () => {
   const [move, setMove] = useState(0);
@@ -14,18 +15,6 @@ const Main = () => {
 
   const toTop = move > 600 ? "1" : "0";
 
-  // const Drip = styled(Wave)`
-  //   /* top: ${move >= 500 ? "-120vh" : ""}; */
-  //   /* @media only screen and (max-width: 899px) and (min-width: 600px) {
-  //     top: ${move >= 100 ? "-120vh" : ""};
-  //   }
-  //   @media only screen and (min-width: 900px) and (max-width: 1199px) {
-  //     width: 70%;
-  //   }
-  //   @media only screen and (min-width: 1200px) {
-  //   } */
-  // `;
-
   const backToTop = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -33,14 +22,17 @@ const Main = () => {
 
   return (
     <div className="mainWrapper">
-      <Wave
+      {/* <Wave
         styles={`top:${move >= 500 ? "-120vh" : ""}`}
         className={`wave ${move > 600 ? "fixed" : ""}`}
-      />
-      <div className="header">
-        <div className="navWrapper">
+      /> */}
+      <div className="banner">
+        <div className="cutOut"/>
+      </div>
+      <div className="navWrapper">
           <DefaultNav move={move} />
-        </div>
+      </div>
+      <div className="header">
         <div className="about-header">
         <div className="headerImg" />
           <div className="info">
@@ -49,18 +41,14 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <h3 id='about' className="aboutText">
-        <span className='about-title'>About Me</span><br/>
-        <div className='border'><div></div></div>
-        I am currently working as a Web Content Editor. Knowledgeable in
-        Front-End Development and gaining experience in Back-End.
-      </h3>
-      <div className='comp-icon-wrapper'>
-        <div className='comp-icon'>
-          <i className="fas fa-arrow-down"></i>
-          <img src={computer} alt='pink and purple gradient computer illustration with paint like drips'></img>
-        </div>
-      </div>
+        <h3 id='about' className="aboutText">
+          <span className='about-title'>About Me</span><br/>
+          <div className='border'><div></div></div>
+          <p>
+            My name is Tatyana, I am currently working as a Technical Support Engineer
+            and working towards becoming a Front End Developer.
+          </p>
+        </h3>
       <Skills />
       <Projects />
       <div style={{ opacity: toTop }} className="toTop">

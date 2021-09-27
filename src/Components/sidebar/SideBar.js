@@ -4,16 +4,16 @@ import "react-awesome-button/dist/styles.css";
 import styled from 'styled-components'
 import purpleDrip from '../../img/star-drip.png'
 
-export const background = {
-  blue: 'https://www.dropbox.com/s/nvm4oy3y07a7abw/wave-dark.png?raw=1',
-  purple: `${purpleDrip}`
-}
+// export const background = {
+//   blue: 'https://www.dropbox.com/s/nvm4oy3y07a7abw/wave-dark.png?raw=1',
+//   purple: `${purpleDrip}`
+// }
 
 const SideBar = () => {
 
   const [toggle, setToggle] = useState(false);
   const [bkgChange, setBkgChange] = useState();
-  const [bgColor, setbgColor] = useState(background.purple)
+  // const [bgColor, setbgColor] = useState(background.purple)
 
   const [move, setMove] = useState(0);
   document.addEventListener("scroll", () => {
@@ -31,11 +31,11 @@ const SideBar = () => {
 `;
 
 
-  document.body.style.backgroundImage = `url(${bgColor})`;
+  // document.body.style.backgroundImage = `url(${bgColor})`;
 
-  if (bgColor === background.blue){
-    document.body.style.backgroundColor = "black";
-  } else {document.body.style.backgroundColor = "white";}
+  // if (bgColor === background.blue){
+  //   document.body.style.backgroundColor = "black";
+  // } else {document.body.style.backgroundColor = "white";}
   
 
   return (
