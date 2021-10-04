@@ -7,7 +7,6 @@ import computer from '../img/drip-computer.png'
 import BackdropFilter from "react-backdrop-filter";
 import {ReactComponent as CutOut} from '../cutOut.svg';
 import plus from '../img/plus.png';
-import simpleParallax from 'simple-parallax-js';
 
 const Main = () => {
   const [move, setMove] = useState(0);
@@ -21,12 +20,6 @@ const Main = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
-
-  var image = document.getElementsByClassName('plus_bg');
-  new simpleParallax(image, {
-    delay: .6,
-    transition: 'cubic-bezier(0,0,0,1)'
-  });
 
   return (
     <div className="mainWrapper">
