@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Caveat&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
-$main-font: 'Bungee Hairline', cursive;
+$main-font:'Bungee', cursive;;
 $divider: linear-gradient(to right, #f9a2d9, #4c4b6e00);
 $neumorph: -17px -17px 15px rgba(227, 172, 247, 0.14), 13px 16px 15px rgba(75, 68, 121, 0.39);
 $shadow: drop-shadow(22px 12px 3px rgba(0,0,0,0.3));
@@ -16,7 +17,10 @@ html{
 
 body{
   background-color: white;
-  background-image: url('./img/bg.png');
+  background-image: url('./img/main-bg.png');
+  background-attachment: fixed;
+  overflow-x: hidden;
+  background-size: cover;
   @media only screen and (max-width: 599px){
     background-position-y: -25vh;
   }
@@ -301,13 +305,24 @@ h3{
   position: absolute;
   top: 0;
   box-sizing: content-box;
+  // background-image: url('./img/plus.png');
+  img.plus_bg{
+    position: absolute;
+    left: 0;
+  }
+  #skills{
+    // background-image: url('./img/plus2.png');
+    // background-position: center;
+    // background-repeat: repeat;
+    // background-attachment: fixed;
+  }
   @media only screen and (max-width: 450px){
     width: 101.5%;
   }
   .aboutText{
     font-size: 3vw;
     border-radius: 25px;    
-    color: #7e73cc;
+    color: white;
     margin-bottom: 0;
     text-align: center;
     display: flex;
@@ -360,6 +375,12 @@ h3{
     height: 120vw;
     z-index: -3;
     top: -248px;
+    @media only screen and (max-width: 500px){
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: initial;
+      height: 168vw;
+    }
     .navWrapper{
       display: flex;
       justify-content: center;
@@ -891,7 +912,7 @@ text-decoration: none;
 
 .boxes2{
   width: 25vw;
-  height: 26vh;
+  height: 56vh;
   margin: 20vh 2vw;
   text-align: center;
   display: flex;
@@ -924,7 +945,7 @@ text-decoration: none;
   }
     @media only screen and (max-width: 599px){
       flex-flow: column;
-      height: 90vh;
+      height: 54vh;
       width: 80vw;
       padding: 5vh 0;
       margin: 15vh 2vw;
@@ -937,7 +958,7 @@ text-decoration: none;
     @media only screen and (min-width: 900px)and (max-width: 1199px){
         flex-flow: column;
         width: 32vw;
-        height: 40vh;
+        height:40vh;
         // height: 95vh;
         margin: 12vh 2vw;
       }

@@ -11,7 +11,7 @@ import proj1 from '../img/nasasq.png';
 import proj6 from '../img/wedding.png';
 import VanillaTilt from 'vanilla-tilt';
 
-const Projects = () => {
+const Projects = (props) => {
   // const proj1 = "https://www.dropbox.com/s/6z2u3f1ddokcq6e/proj5Sq.png?raw=1";
   const proj2 = "https://www.dropbox.com/s/w3lp9l8sf7l1r4h/proj2Sq.png?raw=1";
   const proj3 = "https://www.dropbox.com/s/agkcr4wings3y2q/proj4Sq.png?raw=1";
@@ -30,8 +30,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className="projects">
-      {/* <NavContact /> */}
-      {/* <Drip /> */}
+      {/* <img src={props.plus} className="plus_bg"/> */}
       <div className="wrapper_projects">
         <h1>Projects</h1>
         <div className="projectBoxes">

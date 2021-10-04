@@ -6,6 +6,8 @@ import Skills from "./Skills";
 import computer from '../img/drip-computer.png'
 import BackdropFilter from "react-backdrop-filter";
 import {ReactComponent as CutOut} from '../cutOut.svg';
+import plus from '../img/plus.png';
+import simpleParallax from 'simple-parallax-js';
 
 const Main = () => {
   const [move, setMove] = useState(0);
@@ -20,12 +22,14 @@ const Main = () => {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
 
+  var image = document.getElementsByClassName('plus_bg');
+  new simpleParallax(image, {
+    delay: .6,
+    transition: 'cubic-bezier(0,0,0,1)'
+  });
+
   return (
     <div className="mainWrapper">
-      {/* <Wave
-        styles={`top:${move >= 500 ? "-120vh" : ""}`}
-        className={`wave ${move > 600 ? "fixed" : ""}`}
-      /> */}
       <div className="banner">
         <div className="cutOut"/>
       </div>
@@ -49,10 +53,12 @@ const Main = () => {
             and working towards becoming a Front End Developer.
           </p>
         </h3>
-      <Skills />
-      <Projects />
-      <div style={{ opacity: toTop }} className="toTop">
-        <i onClick={backToTop} className="fas fa-chevron-circle-up" />
+      <div className="main-content">
+        <Skills />
+        <Projects plus={plus}/>
+        <div style={{ opacity: toTop }} className="toTop">
+          <i onClick={backToTop} className="fas fa-chevron-circle-up" />
+        </div>
       </div>
     </div>
   );
