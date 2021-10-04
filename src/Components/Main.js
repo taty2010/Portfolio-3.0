@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-import { ReactComponent as Wave } from "../Wave.svg";
 import { DefaultNav} from "../Components/sidebar/Nav";
 import Projects from "../Projects/Projects";
 import Skills from "./Skills";
-import computer from '../img/drip-computer.png'
-import BackdropFilter from "react-backdrop-filter";
-import {ReactComponent as CutOut} from '../cutOut.svg';
 import plus from '../img/plus.png';
 
 const Main = () => {

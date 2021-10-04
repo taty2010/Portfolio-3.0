@@ -29,6 +29,7 @@
     "vanilla-tilt": "^1.7.2"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-export-namespace-from": "^7.8.3",
     "postcss": "^8.3.8",
     "postcss-loader": "^6.1.1",
     "typescript": "4.4.3"
