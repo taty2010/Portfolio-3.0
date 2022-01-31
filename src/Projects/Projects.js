@@ -9,6 +9,7 @@ import proj4 from '../img/Breweriessq.png';
 import proj5 from '../img/cheftopia.png';
 import proj1 from '../img/nasasq.png';
 import proj6 from '../img/wedding.png';
+import proj7 from '../img/nutrivurv.png';
 import VanillaTilt from 'vanilla-tilt';
 
 const Projects = (props) => {
@@ -61,24 +62,24 @@ const Projects = (props) => {
             </div>
           </div>
           <div data-tilt data-tilt-axis="x" className="boxes2">
-            <img src={`${proj2}`} alt="Project 2" />
+            <img src={`${proj7}`} alt="Project 2" />
             <div className="proj-desc">
-              <h3>Resume</h3>
+              <h3>Nutrivurv</h3>
               {border}
-              <p>Created a resume template with HTML/CSS</p>
+              <p>Weight and Food Tracker website created with React</p>
               <div className='bttn-wrap'>
                 <AwesomeButtonSocial
                   className="socialBttn"
                   size="icon"
                   type="github"
-                  href='https://github.com/taty2010/Preprocessing-I'
+                  href='https://github.com/taty2010/nutrivurv-fe'
                   target='_blank'
                 />
                 <AwesomeButton
                   className="socialBttn"
                   size="icon"
                   type="secondary"
-                  href='https://taty2010.github.io/Preprocessing-I/'
+                  href='https://nutrivurv-fe-lyart.vercel.app/'
                   target='_blank'
                 >
                   <i className="fas fa-globe" />
@@ -138,7 +139,7 @@ const Projects = (props) => {
               </div>
             </div>
           </div>
-          <div data-tilt data-tilt-axis="x" className="boxes2">
+          {/* <div data-tilt data-tilt-axis="x" className="boxes2">
             <img src={`${proj5}`} alt="Project 2" />
             <div className="proj-desc">
               <h3>Cheftopia</h3>
@@ -163,7 +164,7 @@ const Projects = (props) => {
                 </AwesomeButton>
               </div>
             </div>
-          </div>
+          </div> */}
           <div data-tilt data-tilt-axis="x" className="boxes2">
             <img src={`${proj6}`} alt="Project 3" />
             <div className="proj-desc">

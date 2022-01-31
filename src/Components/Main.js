@@ -19,20 +19,20 @@ const Main = () => {
 
   return (
     <div className="mainWrapper">
-      <div className="banner">
-        <div className="cutOut"/>
-      </div>
       <div className="navWrapper">
           <DefaultNav move={move} />
       </div>
+      <div className="banner">
+        <div className="cutOut"/>
+      </div>
       <div className="header">
-        <div className="about-header">
+        {/* <div className="about-header">
         <div className="headerImg" />
           <div className="info">
             <h1>Tatyana Novell</h1>
             <h2>Front-End Developer</h2>
           </div>
-        </div>
+        </div> */}
       </div>
         <h3 id='about' className="aboutText">
           <span className='about-title'>About Me</span><br/>
