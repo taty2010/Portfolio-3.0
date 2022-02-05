@@ -3,12 +3,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export const DefaultNav = props => {
-  // const Nav = styled.div`
-  //   top: ${props.move >= 450 ? "40vh" : ""};
-  // `;
 
   return (
-    <nav className={`nav ${props.move >= 700 ? "fixed" : ""}`}>
+    <nav className={`nav fixed`}>
       <ul>
         <a href="#about">
           <li>About</li>
@@ -22,6 +19,18 @@ export const DefaultNav = props => {
         <Link to="/contact">
           <li>Contact</li>
         </Link>
+      </ul>
+      <ul>
+        <li>
+          <a href='https://github.com/taty2010' target='_blank'>
+          <i className="fab fa-github" />
+          </a>
+        </li>
+        <li>
+          <a href='https://www.linkedin.com/in/tatyana-novell-b0168bb1' target='_blank'>
+          <i className="fab fa-linkedin" />
+          </a>
+        </li>
       </ul>
     </nav>
   );

@@ -3,7 +3,7 @@ import { DefaultNav} from "../Components/sidebar/Nav";
 import Projects from "../Projects/Projects";
 import Skills from "./Skills";
 import plus from '../img/plus.png';
-
+import illustration from '../img/face_illustration.png'
 const Main = () => {
   const [move, setMove] = useState(0);
   document.addEventListener("scroll", () => {
@@ -23,23 +23,20 @@ const Main = () => {
           <DefaultNav move={move} />
       </div>
       <div className="banner">
-        <div className="cutOut"/>
+        <div className="cutOut">
+          <figure>
+            <img src={illustration} alt="portrait illustration"></img>
+          </figure>
+        </div>
       </div>
       <div className="header">
-        {/* <div className="about-header">
-        <div className="headerImg" />
-          <div className="info">
-            <h1>Tatyana Novell</h1>
-            <h2>Front-End Developer</h2>
-          </div>
-        </div> */}
       </div>
         <h3 id='about' className="aboutText">
-          <span className='about-title'>About Me</span><br/>
+          <span className='about-title'>Hello,</span><br/>
           <div className='border'><div></div></div>
           <p>
-            My name is Tatyana, I am currently working as a Technical Support Engineer
-            and working towards becoming a Front End Developer.
+            My name is Tatyana, I am a Front End Developer currently working as a Technical Support Engineer where I primarily
+            use Javascript and Angular with a bacground in React. 
           </p>
         </h3>
       <div className="main-content">
