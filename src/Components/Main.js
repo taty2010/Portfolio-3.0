@@ -35,8 +35,9 @@ const Main = () => {
           <span className='about-title'>Hello,</span><br/>
           <div className='border'><div></div></div>
           <p>
-            My name is Tatyana, I am a Front End Developer currently working as a Technical Support Engineer where I primarily
-            use Javascript and Angular with a bacground in React. 
+            My name is Tatyana, I am a Front End Developer currently working as a Technical Support Engineer. I primarily
+            use Javascript and Angular on the job but I have a background in React. I enjoy tinkering around in CSS and in my free time 
+            I enjoy painting and drawing.
           </p>
         </h3>
       <div className="main-content">
