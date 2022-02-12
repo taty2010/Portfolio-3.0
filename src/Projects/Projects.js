@@ -4,8 +4,8 @@ import {
   AwesomeButtonProgress,
   AwesomeButtonSocial
 } from "react-awesome-button";
-import "../webBttn.scss";
-// import "react-awesome-button/dist/styles.css";
+import "react-awesome-button/dist/styles.css";
+import ButtonStyles from "../webBttn.scss";
 import proj4 from '../img/Breweriessq.png';
 import proj5 from '../img/cheftopia.png';
 import proj1 from '../img/nasasq.png';
@@ -45,6 +45,7 @@ const Projects = (props) => {
               <div className='bttn-wrap'>
                 <AwesomeButtonSocial
                   className="socialBttn"
+                  cssModule={ButtonStyles}
                   size="icon"
                   type="github"
                   href="https://codesandbox.io/s/nasa-apod-bthu5"
