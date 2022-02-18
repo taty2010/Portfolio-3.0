@@ -136,13 +136,13 @@ h3{
 }
 
 .mainWrapper{
-  width: 99.8%;
+  width: 100%;
   height: auto;
   position: absolute;
   top: 0;
   left: 0;
   box-sizing: content-box;
-  // background-image: url('./img/plus.png');
+  // background-image: url('./img/bg2.png');
   img.plus_bg{
     position: absolute;
     left: 0;
@@ -160,24 +160,20 @@ h3{
     display: flex;
     flex-flow:column;
     align-items: center;
-    // height: 100vh;
     justify-content: center;
     width: 99vw;
     font-family: $main-font;
-    // top: -470px;
     line-height: 70px;
     @media only screen and (max-width: 450px){
-      font-size: 5vw;
+      font-size: 14px;
       top: -270px;
       line-height: 30px;
     }
-    // background: #bcb2cd;
-    // position:relative;
     span{
       font-size: 6vw;
     }
     p{
-      width: 79vw;
+      width: 65vw;
       // line-height: 76px;
     }
   }
@@ -415,8 +411,10 @@ text-decoration: none;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-left: 30px;
   margin-top: 5px;
+  @media only screen and (max-width: 450px){
+    margin-left: -30px;
+  }
 }
 
 @keyframes floating {
@@ -482,8 +480,8 @@ text-decoration: none;
   }
   .skills_blob{
     transition: all 0.8s ease-in-out;
-    width: 150px;
-    height: 150px;
+    width: 15vw;
+    animation-name: floating;
     &:hover{
       transform: scale(1.1) translate(10%, 0);
     }
@@ -510,6 +508,8 @@ text-decoration: none;
     }
   }
 }
+
+
 
 .css{
   left: 0;
@@ -712,7 +712,7 @@ text-decoration: none;
   }
     @media only screen and (max-width: 599px){
       flex-flow: column;
-      height: 54vh;
+      height: 39vh;
       width: 80vw;
       padding: 5vh 0;
       margin: 15vh 2vw;
@@ -779,8 +779,8 @@ text-decoration: none;
     font-size: 2vw;
     line-height: 5.5vh;
     @media only screen and (max-width: 599px){
-      font-size: 5vw;
-      width: 30vw;
+      font-size: 4vw;
+      width: auto;
     }
     @media only screen and (min-width: 900px)and (max-width: 1199px){
       margin: 2vw;
