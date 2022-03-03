@@ -23,10 +23,10 @@ const Main = () => {
           <DefaultNav move={move} />
       </div>
       <div className="banner">
+        <figure className="portrait">
+              <img src={illustration} alt="portrait illustration"></img>
+        </figure>
         <div className="cutOut">
-          <figure>
-            <img src={illustration} alt="portrait illustration"></img>
-          </figure>
         </div>
       </div>
       <div className="header">

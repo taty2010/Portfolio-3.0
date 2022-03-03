@@ -17,10 +17,12 @@ html{
 
 body{
   background-color: white;
-  background-image: url('./img/main-bg.png');
+  background-image: url('./img/bg2.png');
   background-attachment: fixed;
   overflow-x: hidden;
-  background-size: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 h3{
@@ -221,6 +223,10 @@ h3{
     }
 }
 
+a li {
+    color: #5a3572;
+}
+
 .about-header{
   position: relative;
   top: 20vh;
@@ -329,7 +335,7 @@ text-decoration: none;
 }
 
 .nav a:link{
-  color: white;
+  color: #5a3572;
   text-decoration: none;
   border-radius: 40px;
   margin: 0 2%;
@@ -377,36 +383,39 @@ text-decoration: none;
 
 .banner{
   display:inline-block;
-  width: 100%;
+  width: 101%;
   vertical-align: middle;
   overflow: hidden;
+  height: auto;
+  position: relative;
 }
 
 .cutOut{
   position: relative;
-  background-image: url('./img/header.png');
-  background-size: contain;
+  background-image: url('./img/cutout2.png');
+  background-size: 36%;
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-  padding: 66%
+  padding: 92%
 }
 
-.cutOut figure{
-  width: 45%;
+figure.portrait{
+  width: 70%;
   position: absolute;
-  bottom: 0;
+  top: 60%;
+  z-index: 999;
   margin: 0;
-  left: 0;
+  left: 20%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.banner img{
+figure.portrait img{
   height: 100%;
-  width: 30%;
+  width: 56%;
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -419,7 +428,7 @@ text-decoration: none;
 
 @keyframes floating {
   0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 15px); }
+  50%  { transform: translate(0, 25px); }
   100%   { transform: translate(0, -0px); }   
 }
 
